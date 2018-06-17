@@ -5,18 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class NormalLogin extends AppCompatActivity {
+public class homepage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_normal_login);
-
-
+        setContentView(R.layout.activity_homepage);
     }
-
-    public void jumpTohomepage(View v){
-        Intent l=new Intent(this,homepage.class);
-        startActivity(l);
+    public void jumpToteenAndold(View v){
+        Intent r=new Intent(this,teenAndold.class);
+        startActivity(r);
     }
 }

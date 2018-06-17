@@ -10,6 +10,9 @@
         android:id="@+id/ChooseIdentity"
         android:layout_width="386dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:background="#FFCDD2"
         android:gravity="center"
         android:text="吾居無束"
@@ -46,7 +49,8 @@
         android:textSize="35dp"
         tools:layout_editor_absoluteX="170dp"
         tools:layout_editor_absoluteY="318dp"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:onClick="jumpTologin"/>
 
     <ImageView
         android:id="@+id/imageView"

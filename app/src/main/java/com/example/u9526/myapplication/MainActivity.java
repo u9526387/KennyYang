@@ -20,17 +20,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               Intent i = new Intent(MainActivity.this,ChooseIdentity.class);
-               startActivity(i);
-               // i = choose identity
+                Intent i = new Intent(MainActivity.this, ChooseIdentity.class);
+                startActivity(i);
+                // i = choose identity
             }
         });
 
 
-
     }
+
+    public void jumpTologin(View v) {
+        Intent l = new Intent(this, NormalLogin.class);
+        startActivity(l);
 
 
 //i love ivy
 
+    }
 }

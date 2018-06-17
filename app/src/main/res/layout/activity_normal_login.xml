@@ -18,4 +18,71 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/firstName7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="密碼:"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstName7"
+        android:layout_alignBottom="@+id/firstName7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:ems="10"
+        android:hint="請輸入密碼"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/firstName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firstName7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:text="帳號:"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstName8"
+        android:layout_alignBottom="@+id/firstName8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/firstName8"
+        android:layout_toRightOf="@+id/firstName8"
+        android:ems="10"
+        android:hint="請輸入手機號碼"
+        android:inputType="phone" />
+
+
+    <Button
+        android:id="@+id/FinishRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:gravity="center"
+        android:text="登入"
+        android:textSize="30dp"
+        android:onClick="jumpTohomepage"/>
+
 </RelativeLayout>
