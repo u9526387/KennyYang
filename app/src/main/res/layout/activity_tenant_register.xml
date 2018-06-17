@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TenantRegister">
+
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/firstName9"
+        android:ems="10"
+        android:hint="請再次輸入密碼"
+        android:inputType="textPassword"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/firstName9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/firstName2"
+        android:layout_marginBottom="99dp"
+        android:text="密碼確認:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignLeft="@+id/firstName2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="請輸入姓氏"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/firstName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/firstName7"
+        android:layout_below="@+id/editText9"
+        android:text="密碼:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignLeft="@+id/firstName7" />
+
+    <TextView
+        android:id="@+id/firstName7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/firstName3"
+        android:layout_marginBottom="162dp"
+        android:text="密碼:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignLeft="@+id/firstName3" />
+
+    <TextView
+        android:id="@+id/firstName10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignParentStart="true"
+        android:text="驗證碼:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:text="手機號碼:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_marginEnd="-56dp"
+        android:layout_toStartOf="@+id/editText3"
+        android:text="姓:"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_marginRight="-56dp"
+        android:layout_toLeftOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_toRightOf="@+id/editText3"
+        android:text="名:"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_toEndOf="@+id/lastName"
+        android:layout_toRightOf="@+id/lastName"
+        android:ems="10"
+        android:hint="請輸入名字"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="帳號申請"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/firstName8"
+        android:ems="10"
+        android:hint="請輸入手機號碼"
+        android:inputType="phone"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="219dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:text="進行手機認證"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="225dp"
+        android:ems="10"
+        android:hint="請輸入收到的驗證碼"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName7"
+        android:layout_toEndOf="@+id/firstName2"
+        android:ems="10"
+        android:hint="請輸入密碼"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/firstName2" />
+
+    <Button
+        android:id="@+id/FinishRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:gravity="center"
+        android:text="完成註冊"
+        android:textSize="30dp" />
+
+</RelativeLayout>

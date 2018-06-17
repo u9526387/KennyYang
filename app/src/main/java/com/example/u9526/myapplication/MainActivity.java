@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button Register;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
                Intent i = new Intent(MainActivity.this,ChooseIdentity.class);
                startActivity(i);
-
+               // i = choose identity
             }
         });
+
+
 
     }
 

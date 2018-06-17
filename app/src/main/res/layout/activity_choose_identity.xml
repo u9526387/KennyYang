@@ -7,7 +7,7 @@
     tools:context=".ChooseIdentity">
 
     <TextView
-        android:id="@+id/Title"
+        android:id="@+id/ChooseIdentity"
         android:layout_width="386dp"
         android:layout_height="wrap_content"
         android:background="#FFCDD2"
@@ -20,38 +20,35 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/TenantR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="221dp"
-        android:text="房客註冊"
-        android:textSize="35dp"
         android:background="@drawable/lightbluecolorstyle"
-        />
+        android:text="房客註冊"
+        android:textSize="35dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/LandlordR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="201dp"
-        android:text="屋主註冊"
-        android:textSize="35dp"
+        android:layout_marginBottom="205dp"
         android:background="@drawable/lightbluecolorstyle"
-        />
+        android:text="屋主註冊"
+        android:textSize="35dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/NormalR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="120dp"
-        android:text="一般註冊"
-        android:textSize="35dp"
         android:background="@drawable/lightbluecolorstyle"
-        />
+        android:text="一般註冊"
+        android:textSize="35dp" />
 </RelativeLayout>

@@ -16,7 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseIdentity"></activity>
+        <activity android:name=".ChooseIdentity" />
+        <activity android:name=".NormalLogin" />
+        <activity android:name=".TenantInfo" />
+        <activity android:name=".TenantRegister" />
+        <activity android:name=".LandlordRegister" />
+        <activity android:name=".NormalRegister"></activity>
     </application>
 
 </manifest>
