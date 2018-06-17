@@ -21,7 +21,13 @@
         <activity android:name=".TenantInfo" />
         <activity android:name=".TenantRegister" />
         <activity android:name=".LandlordRegister" />
-        <activity android:name=".NormalRegister"></activity>
+        <activity android:name=".NormalRegister" />
+        <activity android:name=".homepage" />
+        <activity
+            android:name=".teenAndold"
+            android:label="@string/title_activity_teen_andold"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".landlord_register2"></activity>
     </application>
 
 </manifest>
