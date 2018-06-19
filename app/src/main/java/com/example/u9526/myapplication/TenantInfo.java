@@ -1,25 +1,66 @@
 package com.example.u9526.myapplication;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TenantInfo extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
+
+
+
+
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tenant_register2);
+
+
+
+
 
         Spinner spinner =findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence> adapter =ArrayAdapter.createFromResource(this,R.array.spn_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
          spinner.setAdapter(adapter);
          spinner.setOnItemSelectedListener(this);
+
+        Spinner spinnerYear =findViewById(R.id.spinnerYear);
+        ArrayAdapter<CharSequence> adapterYear =ArrayAdapter.createFromResource(this,R.array.spn_year, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerYear.setAdapter(adapterYear);
+        spinnerYear.setOnItemSelectedListener(this);
+
+
+        Spinner spinnerMonth =findViewById(R.id.spinnerMonth);
+        ArrayAdapter<CharSequence> adapterMonth =ArrayAdapter.createFromResource(this,R.array.spn_month, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMonth.setAdapter(adapterMonth);
+        spinnerMonth.setOnItemSelectedListener(this);
+
+
+        Spinner spinnerDay =findViewById(R.id.spinnerDay);
+        ArrayAdapter<CharSequence> adapterDay =ArrayAdapter.createFromResource(this,R.array.spn_day, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerDay.setAdapter(adapterDay);
+        spinnerDay.setOnItemSelectedListener(this);
+
+
+
+
 
 
 
@@ -37,6 +78,7 @@ public class TenantInfo extends AppCompatActivity implements AdapterView.OnItemS
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 }
 
 
