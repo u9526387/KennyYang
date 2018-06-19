@@ -61,6 +61,15 @@ public class TenantInfo extends AppCompatActivity implements AdapterView.OnItemS
 
 
 
+        Spinner spinnerReligion =findViewById(R.id.spinnerReligion);
+        ArrayAdapter<CharSequence> adapterReligion =ArrayAdapter.createFromResource(this,R.array.spn_religion, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerReligion.setAdapter(adapterReligion);
+        spinnerReligion.setOnItemSelectedListener(this);
+
+
+
+
 
 
 

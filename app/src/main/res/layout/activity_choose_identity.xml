@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/ChooseIdentity"
-        android:layout_width="386dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFCDD2"
         android:gravity="center"
