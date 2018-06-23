@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.u9526.myapplication.rent_homepgae">
+
+
+
+
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="租屋首頁"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rent"
+        android:layout_marginLeft="40dp"
+        android:text="我要出租"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+
+    <ImageButton
+        android:id="@+id/rent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ChooseIdentity"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@android:color/background_light"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/house" />
+
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Search"
+        android:layout_marginRight="40dp"
+        android:text="租屋搜尋"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/Search"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ChooseIdentity"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@android:color/background_light"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/search" />
+
+    <Button
+        android:id="@+id/homepage"
+        android:layout_width="88dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#03DAC6"
+        android:text="首頁"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/collection"
+        android:layout_width="88dp"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_alignBottom="@+id/homepage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/homepage"
+        android:layout_toRightOf="@+id/homepage"
+        android:backgroundTint="#03DAC6"
+        android:text="我的收藏"
+        android:textSize="16dp"
+        android:onClick="jumpTorent_collection"/>
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="88dp"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_alignBottom="@+id/homepage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/collection"
+        android:layout_toRightOf="@+id/collection"
+        android:backgroundTint="#03DAC6"
+        android:text="互動訊息"
+        android:textSize="16dp"
+        android:onClick="jumpTorent_message"/>
+
+    <Button
+        android:id="@+id/personalData"
+        android:layout_width="88dp"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_alignBottom="@+id/message"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#03DAC6"
+        android:text="個人資料"
+        android:textSize="16dp"
+        android:onClick="jumpTorent_personalData"/>
+
+
+</RelativeLayout>

@@ -54,7 +54,7 @@
         android:layout_marginLeft="45dp" />
 
     <TextView
-        android:id="@+id/firstName11"
+        android:id="@+id/firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/RentAndFind"
@@ -99,7 +99,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@mipmap/family"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:onClick="jumpTorent_homepage"/>
 
     <ImageButton
         android:id="@+id/HealthCare"

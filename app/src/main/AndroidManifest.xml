@@ -23,8 +23,11 @@
         <activity android:name=".LandlordRegister" />
         <activity android:name=".NormalRegister" />
         <activity android:name=".homepage" />
-        <activity android:name=".landlord_register2" />
-        <activity android:name=".tenant_register2"></activity>
+        <activity android:name=".Landlord_info" />
+        <activity android:name=".rent_homepgae" />
+        <activity android:name=".rent_collection" />
+        <activity android:name=".rent_message" />
+        <activity android:name=".rent_personalData"></activity>
     </application>
 
 </manifest>
