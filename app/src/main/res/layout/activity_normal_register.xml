@@ -145,7 +145,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/firstName8"
-        android:ems="10"
+        android:ems="100"
         android:hint="請輸入手機號碼"
         android:inputType="phone" />
 
