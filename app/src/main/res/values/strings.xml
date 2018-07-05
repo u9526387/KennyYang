@@ -20,11 +20,6 @@
     </string-array>
 
 
-
-
-
-
-
     <string-array name="spn_year">
         <item>1970</item>
         <item>1971</item>
@@ -32,7 +27,6 @@
         <item>1973</item>
         <item>1974</item>
     </string-array>
-
 
 
     <string-array name="spn_month">
@@ -83,7 +77,6 @@
         <item>29</item>
         <item>30</item>
     </string-array>
-
 
 
     <string name="large_text">

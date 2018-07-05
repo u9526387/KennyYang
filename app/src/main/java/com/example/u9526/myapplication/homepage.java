@@ -11,6 +11,12 @@ public class homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
+    }
+    public void jumpTorent_homepage(View v){
+        Intent jumptorent_homepage=new Intent(this,rent_homepgae.class);
+        startActivity(jumptorent_homepage);
+
     }
 
 }

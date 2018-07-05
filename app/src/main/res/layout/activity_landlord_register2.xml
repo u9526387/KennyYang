@@ -4,7 +4,198 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.landlord_register2">
+    tools:context="com.example.u9526.myapplication.Landlord_info">
+
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/gender"
+        android:layout_toRightOf="@+id/gender"
+        android:visibility="visible" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvTransportation"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvdepartent"
+        android:text="交通工具:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tvdepartent"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSchool"
+        android:text="科系:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+    <EditText
+        android:id="@+id/Departent"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvdepartent"
+        android:layout_toEndOf="@+id/tvdepartent"
+        android:layout_toRightOf="@+id/tvdepartent"
+        android:ems="10"
+        android:hint="請輸入科系"
+        android:inputType="textLongMessage" />
+
+
+
+    <TextView
+        android:id="@+id/tvSchool"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvExpertise"
+        android:text="就讀學校:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+    <EditText
+        android:id="@+id/School"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSchool"
+        android:layout_toEndOf="@+id/tvSchool"
+        android:layout_toRightOf="@+id/tvSchool"
+        android:ems="10"
+        android:hint="請輸入學校"
+        android:inputType="textLongMessage" />
+
+
+    <TextView
+        android:id="@+id/tvExpertise"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvInterest"
+        android:text="專長:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvInterest"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvAddress"
+        android:text="興趣:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLanguage"
+        android:text="原居住地址:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAddress"
+        android:layout_toEndOf="@+id/tvAddress"
+        android:layout_toRightOf="@+id/tvAddress"
+        android:ems="10"
+        android:hint="請輸入地址"
+        android:inputType="textLongMessage" />
+
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvReligion"
+        android:text="語言:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/tvReligion"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvIDnumbers"
+        android:text="宗教:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <Spinner
+        android:id="@+id/spinnerReligion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLanguage"
+        android:layout_below="@+id/tvIDnumbers"
+        android:layout_toEndOf="@+id/tvReligion"
+        android:layout_toRightOf="@+id/tvReligion"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvIDnumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerMonth"
+        android:paddingTop="5dp"
+        android:text="身分證字號:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/IDnumbers"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerDay"
+        android:layout_toEndOf="@+id/tvIDnumbers"
+        android:layout_toRightOf="@+id/tvIDnumbers"
+        android:ems="10"
+        android:hint="請輸入身分證字號"
+        android:inputType="textVisiblePassword" />
 
     <TextView
         android:id="@+id/ChooseIdentity"
@@ -19,41 +210,68 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/FirstName"
+    <Spinner
+        android:id="@+id/spinnerDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="75dp"
-        android:text="性別:"
+        android:layout_alignBottom="@+id/spinnerMonth"
+        android:layout_toEndOf="@+id/spinnerMonth"
+        android:layout_toRightOf="@+id/spinnerMonth"
         android:textColor="#000000"
         android:textSize="30dp"
-        android:layout_alignParentLeft="true" />
+        android:visibility="visible" />
 
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvBrithday"
+        android:layout_toEndOf="@+id/spinnerYear"
+        android:layout_toRightOf="@+id/spinnerYear"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvBrithday"
+        android:layout_toEndOf="@+id/tvBrithday"
+        android:layout_toRightOf="@+id/tvBrithday"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:visibility="visible" />
 
     <TextView
-        android:id="@+id/firstName"
+        android:id="@+id/tvBrithday"
+        android:paddingTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/gender"
+        android:text="生日:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="75dp"
         android:text="性別:"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="28dp"
+        android:layout_alignParentLeft="true" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/FirstName"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_toEndOf="@+id/FirstName"
-        android:layout_toRightOf="@+id/FirstName"
-        android:visibility="visible" />
+
+
+
+
 
 
 

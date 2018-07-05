@@ -10,9 +10,9 @@
         android:id="@+id/firstName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/firstName6"
-        android:layout_below="@+id/Food"
-        android:layout_marginTop="-198dp"
+        android:layout_below="@+id/Repair"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
         android:text="水電修繕"
         android:textColor="#000000"
         android:textSize="30dp"
@@ -22,67 +22,57 @@
         android:id="@+id/firstName12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@id/imageButton11"
         android:layout_below="@+id/imageButton11"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="-53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
         android:text="布告欄"
         android:textColor="#000000"
-        android:textSize="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="43dp" />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/firstName14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/firstName5"
-        android:layout_below="@+id/imageButton11"
-        android:layout_marginTop="-53dp"
+        android:layout_below="@+id/imageButton13"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
         android:text="使用說明"
         android:textColor="#000000"
         android:textSize="30dp"
-        android:layout_alignLeft="@+id/firstName5" />
+  />
 
     <TextView
         android:id="@+id/firstName13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/Food"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="-198dp"
         android:text="食物外送"
         android:textColor="#000000"
         android:textSize="30dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="29dp" />
+        android:layout_marginLeft="45dp" />
 
     <TextView
-        android:id="@+id/firstName11"
+        android:id="@+id/firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/RentAndFind"
-        android:layout_marginStart="29dp"
+        android:layout_marginLeft="45dp"
         android:text="青銀共居"
         android:textColor="#000000"
-        android:textSize="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="29dp" />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/firstName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/RentAndFind"
-        android:layout_marginEnd="33dp"
+        android:layout_below="@+id/HealthCare"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
         android:text="健康照護"
         android:textColor="#000000"
-        android:textSize="30dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="33dp" />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/ChooseIdentity"
@@ -103,14 +93,14 @@
         android:layout_height="105dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="113dp"
-        android:adjustViewBounds="false"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/button_border"
         android:scaleType="fitXY"
         app:srcCompat="@mipmap/family"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="36dp" />
+        android:layout_marginLeft="5dp"
+        android:onClick="jumpTorent_homepage"/>
 
     <ImageButton
         android:id="@+id/HealthCare"
@@ -119,8 +109,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/RentAndFind"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/button_border"
         android:scaleType="fitXY"
         app:srcCompat="@mipmap/care" />
@@ -129,10 +119,10 @@
         android:id="@+id/Food"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_alignLeft="@+id/RentAndFind"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/RentAndFind"
-        android:layout_marginBottom="198dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="250dp"
         android:background="@drawable/button_border"
         android:scaleType="fitXY"
         app:srcCompat="@mipmap/food" />
@@ -152,24 +142,25 @@
         android:id="@+id/imageButton11"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/RentAndFind"
         android:layout_alignStart="@+id/RentAndFind"
-        android:layout_marginBottom="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp"
         android:scaleType="fitXY"
         android:background="@drawable/button_border"
         app:srcCompat="@mipmap/write"
-        android:layout_alignLeft="@+id/RentAndFind" />
+         />
 
     <ImageButton
         android:id="@+id/imageButton13"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_alignStart="@+id/HealthCare"
-        android:layout_below="@+id/firstName5"
         android:scaleType="fitXY"
         android:background="@drawable/button_border"
         app:srcCompat="@mipmap/question"
-        android:layout_alignLeft="@+id/HealthCare" />
+        android:layout_alignLeft="@+id/HealthCare"
+        android:layout_marginTop="400dp"
+ />
 
 
 </RelativeLayout>
