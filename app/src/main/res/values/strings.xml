@@ -78,6 +78,20 @@
         <item>30</item>
     </string-array>
 
+    <string-array name="RoomType">
+        <item>套房</item>
+        <item>雅房</item>
+        <item>其他</item>
+    </string-array>
+
+
+    <string-array name="HouseType">
+        <item>公寓</item>
+        <item>別墅</item>
+        <item>透天厝</item>
+        <item>電梯大樓</item>
+    </string-array>
+
 
     <string name="large_text">
 

@@ -27,7 +27,9 @@
         <activity android:name=".rent_homepgae" />
         <activity android:name=".rent_collection" />
         <activity android:name=".rent_message" />
-        <activity android:name=".rent_personalData"></activity>
+        <activity android:name=".rent_personalData" />
+        <activity android:name=".FillRentInfo1" />
+        <activity android:name=".FillRentInfo2"></activity>
     </application>
 
 </manifest>
