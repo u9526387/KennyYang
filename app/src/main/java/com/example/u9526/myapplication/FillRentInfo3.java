@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FillRentInfo2 extends AppCompatActivity {
+public class FillRentInfo3 extends AppCompatActivity {
 
     private Button NextStep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fill_rent_info2);
+        setContentView(R.layout.activity_fill_rent_info3);
 
         NextStep = (Button) findViewById(R.id.NextStep);
         NextStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(FillRentInfo2.this,FillRentInfo3.class);
+                Intent i = new Intent(FillRentInfo3.this,FillRentInfo4.class);
                 startActivity(i);
             }
         });

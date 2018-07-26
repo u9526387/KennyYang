@@ -117,6 +117,28 @@
         <item>連江縣</item>
     </string-array>
 
+
+    <string-array name="YesorNo">
+        <item>有</item>
+        <item>無</item>
+    </string-array>
+
+
+    <string-array name="money">
+        <item>一個月</item>
+        <item>兩個月</item>
+        <item>面議</item>
+    </string-array>
+
+    <string-array name="RentTime">
+        <item>三個月</item>
+        <item>半年</item>
+        <item>一年</item>
+        <item>兩年</item>
+        <item>其他</item>
+    </string-array>
+
+
     <string name="large_text">
 
 
