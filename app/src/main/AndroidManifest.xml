@@ -29,11 +29,7 @@
         <activity android:name=".rent_message" />
         <activity android:name=".rent_personalData" />
         <activity android:name=".FillRentInfo1" />
-        <activity android:name=".FillRentInfo2" />
-        <activity android:name=".rent_homepage__search" />
-        <activity android:name=".rent_homepage__search___landmark" />
-        <activity android:name=".rent_homepage__search___attribute" />
-        <activity android:name=".rent_homepage__search___region"></activity>
+        <activity android:name=".FillRentInfo2"></activity>
     </application>
 
 </manifest>

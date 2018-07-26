@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillRentInfo3">
+
+
+    <TextView
+        android:id="@+id/firstName28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="123dp"
+        android:text="*可遷入日:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="171dp"
+        android:text="*最短租期:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox15"
+        android:layout_below="@+id/checkBox14"
+        android:text="電費"
+        android:textSize="18dp"
+        android:layout_alignLeft="@+id/checkBox15" />
+
+    <CheckBox
+        android:id="@+id/checkBox19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox14"
+        android:text="水費"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="254dp"
+        android:text="*租金包含:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="207dp"
+        android:text="*租金:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/firstName22"
+        android:layout_toEndOf="@+id/firstName22"
+        android:entries="@array/YesorNo"
+        android:layout_toRightOf="@+id/firstName22" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/firstName23"
+        android:layout_marginStart="-79dp"
+        android:layout_toEndOf="@+id/spinner7"
+        android:entries="@array/money"
+        android:layout_marginLeft="-79dp"
+        android:layout_toRightOf="@+id/spinner7" />
+
+    <TextView
+        android:id="@+id/firstName22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName21"
+        android:layout_toEndOf="@+id/checkBox12"
+        android:text="電梯:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/checkBox12" />
+
+    <TextView
+        android:id="@+id/firstName25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName23"
+        android:layout_toStartOf="@+id/spinner7"
+        android:text="押金:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toLeftOf="@+id/spinner7" />
+
+    <TextView
+        android:id="@+id/firstName24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName23"
+        android:layout_toEndOf="@+id/checkBox11"
+        android:text="元/月"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/checkBox11" />
+
+    <TextView
+        android:id="@+id/firstName21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="159dp"
+        android:text="車位:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/firstName16"
+        android:layout_marginEnd="19dp"
+        android:text="椅子"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp" />
+
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="房屋資料"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/firstName16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:text="*提供家具:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName16"
+        android:text="床"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName26"
+        android:text="管理費"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName26"
+        android:layout_marginStart="97dp"
+        android:text="清潔費"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="97dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox14"
+        android:layout_toEndOf="@+id/firstName24"
+        android:text="瓦斯費"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/firstName24" />
+
+    <CheckBox
+        android:id="@+id/checkBox21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName26"
+        android:layout_toEndOf="@+id/firstName24"
+        android:text="第四台"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/firstName24" />
+
+    <CheckBox
+        android:id="@+id/checkBox17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName26"
+        android:layout_marginStart="-96dp"
+        android:layout_toEndOf="@+id/checkBox10"
+        android:text="網路"
+        android:textSize="18dp"
+        android:layout_marginLeft="-96dp"
+        android:layout_toRightOf="@+id/checkBox10" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/firstName16"
+        android:layout_marginEnd="96dp"
+        android:text="桌子"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="96dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName16"
+        android:layout_marginStart="139dp"
+        android:text="沙發"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="139dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName16"
+        android:layout_marginStart="62dp"
+        android:text="衣櫃"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="62dp" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/firstName27"
+        android:layout_toEndOf="@+id/firstName16"
+        android:entries="@array/RentTime"
+        android:layout_toRightOf="@+id/firstName16" />
+
+    <Spinner
+        android:id="@+id/spinner9"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/spinner7"
+        android:layout_toEndOf="@+id/firstName21"
+        android:entries="@array/YesorNo"
+        android:layout_toRightOf="@+id/firstName21" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="66dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/firstName23"
+        android:layout_toEndOf="@+id/firstName23"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/firstName23" />
+
+    <Button
+        android:id="@+id/NextStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:gravity="center"
+        android:text="繼續填寫"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
