@@ -5,15 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TenantRegister extends AppCompatActivity {
+public class landlord_register3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tenant_register);
+        setContentView(R.layout.activity_landlord_register3);
     }
-    public void jumpTotenant_info(View v){
-        Intent tenant_info=new Intent(this,Tenant_register2.class);
-        startActivity(tenant_info);
+
+
+    public void jumpToMain(View v){
+        Intent mmmm=new Intent(this,MainActivity.class);
+        startActivity(mmmm);
     }
 }

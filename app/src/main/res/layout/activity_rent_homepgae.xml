@@ -59,7 +59,7 @@
         android:layout_alignTop="@+id/Rent"
         android:backgroundTint="@android:color/background_light"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/search" />
+        app:srcCompat="@drawable/search"/>
 
     <TextView
         android:id="@+id/tvSearch2"

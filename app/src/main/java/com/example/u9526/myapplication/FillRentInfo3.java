@@ -19,8 +19,8 @@ public class FillRentInfo3 extends AppCompatActivity {
         NextStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(FillRentInfo3.this,FillRentInfo4.class);
-                startActivity(i);
+                Intent tt= new Intent(FillRentInfo3.this,FillRentInfo4.class);
+                startActivity(tt);
             }
         });
 
