@@ -8,19 +8,19 @@ import android.widget.Button;
 
 public class FillRentInfo3 extends AppCompatActivity {
 
-    private Button NextStep3;
+    private Button NextStep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_rent_info3);
 
-        NextStep3 = (Button) findViewById(R.id.NextStep3);
-        NextStep3.setOnClickListener(new View.OnClickListener() {
+        NextStep = (Button) findViewById(R.id.NextStep);
+        NextStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i3 = new Intent(FillRentInfo3.this,FillRentInfo4.class);
-                startActivity(i3);
+                Intent tt= new Intent(FillRentInfo3.this,FillRentInfo4.class);
+                startActivity(tt);
             }
         });
 

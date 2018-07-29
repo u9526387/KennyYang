@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 public class rent_homepgae extends AppCompatActivity {
 
     private ImageButton Rent;
+    private ImageButton Search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,15 @@ public class rent_homepgae extends AppCompatActivity {
         setContentView(R.layout.activity_rent_homepgae);
 
         Rent = (ImageButton) findViewById(R.id.Rent);
+        Search =(ImageButton)findViewById(R.id.Search);
+
+        Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent kk=new Intent(rent_homepgae.this,rent_homepage__search___attribute.class);
+                startActivity(kk);
+            }
+        });
         Rent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,9 +34,6 @@ public class rent_homepgae extends AppCompatActivity {
                 // i = 填寫註冊頁面;
             }
         });
-
-
-
 
     }
 
@@ -43,5 +50,11 @@ public class rent_homepgae extends AppCompatActivity {
     public void jumpTorent_personalData(View v){
         Intent rent_personalData=new Intent(this,rent_personalData.class);
         startActivity(rent_personalData);
+    }
+
+
+    public void jumpTry(View v){
+        Intent kk=new Intent(this,rent_homepage__search___attribute.class);
+        startActivity(kk);
     }
 }

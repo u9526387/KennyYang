@@ -2,24 +2,29 @@ package com.example.u9526.myapplication;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-
-import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class Landlord_info extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class Tenant_register2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+{
+
+
+
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landlord_register2);
+        setContentView(R.layout.activity_tenant_register2);
+
 
 
 
@@ -27,8 +32,8 @@ public class Landlord_info extends AppCompatActivity implements AdapterView.OnIt
         Spinner spinner =findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence> adapter =ArrayAdapter.createFromResource(this,R.array.spn_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
+         spinner.setAdapter(adapter);
+         spinner.setOnItemSelectedListener(this);
 
         Spinner spinnerYear =findViewById(R.id.spinnerYear);
         ArrayAdapter<CharSequence> adapterYear =ArrayAdapter.createFromResource(this,R.array.spn_year, android.R.layout.simple_spinner_item);
@@ -58,9 +63,15 @@ public class Landlord_info extends AppCompatActivity implements AdapterView.OnIt
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerReligion.setAdapter(adapterReligion);
         spinnerReligion.setOnItemSelectedListener(this);
+
+
+
+
+
+
+
+
     }
-
-
 
 
     @Override
@@ -73,13 +84,17 @@ public class Landlord_info extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {
-
+    public void jumpTotenant_info2(View v){
+        Intent tenant_info2=new Intent(this,tenant_register3.class);
+        startActivity(tenant_info2);
     }
-    public void jumpTolandlord_register3(View v){
-        Intent lttt=new Intent(this,landlord_register3.class);
-        startActivity(lttt);
-    }
+
 }
+
+
+
+
+
+
+
+
