@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".FillRentInfo2">
 
-
-
-
-
-
-
-
-
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
@@ -38,12 +30,12 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText6"
+        android:layout_alignStart="@+id/#Nong"
         android:layout_below="@+id/firstName20"
         android:layout_marginTop="-145dp"
         android:text="冰箱"
         android:textSize="18dp"
-        android:layout_alignLeft="@+id/editText6" />
+        android:layout_alignLeft="@+id/#Nong" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -70,11 +62,11 @@
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText6"
+        android:layout_alignStart="@+id/#Nong"
         android:layout_below="@+id/checkBox"
         android:text="網路"
         android:textSize="18dp"
-        android:layout_alignLeft="@+id/editText6" />
+        android:layout_alignLeft="@+id/#Nong" />
 
     <CheckBox
         android:id="@+id/checkBox6"
@@ -102,7 +94,7 @@
         android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editText21"
+        android:id="@+id/#Ping"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
@@ -127,18 +119,18 @@
         android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editText18"
+        android:id="@+id/Room"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
-        android:layout_alignStart="@+id/editText6"
+        android:layout_alignLeft="@+id/#Nong"
+        android:layout_alignStart="@+id/#Nong"
         android:layout_centerVertical="true"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignLeft="@+id/editText6" />
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/LivingRoom"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
@@ -218,24 +210,24 @@
         android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/Number"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignEnd="@+id/spinner3"
-        android:layout_alignTop="@+id/editText2"
+        android:layout_alignTop="@+id/Valley"
         android:ems="10"
         android:inputType="textPersonName"
         android:layout_alignRight="@+id/spinner3" />
 
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/Floor"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/editText8"
+        android:layout_alignTop="@+id/Number"
         android:layout_marginEnd="34dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -243,12 +235,12 @@
         android:layout_marginRight="34dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/#Nong"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText8"
+        android:layout_alignTop="@+id/Number"
         android:layout_marginStart="95dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -256,7 +248,7 @@
         android:layout_marginLeft="95dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/Valley"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
@@ -267,45 +259,45 @@
         android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editText20"
+        android:id="@+id/Balcony"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="51dp" />
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText19"
+        android:id="@+id/Toilet"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignEnd="@+id/spinner3"
+        android:layout_alignRight="@+id/spinner3"
         android:layout_centerVertical="true"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignRight="@+id/spinner3" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
-        android:layout_toEndOf="@+id/editText6"
+        android:layout_alignBottom="@+id/Number"
+        android:layout_toEndOf="@+id/#Nong"
         android:text="弄"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editText6" />
+        android:layout_toRightOf="@+id/#Nong" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignBottom="@+id/Number"
         android:layout_toEndOf="@+id/spinner3"
         android:layout_toRightOf="@+id/spinner3"
         android:text="號"
@@ -316,11 +308,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignBottom="@+id/Number"
         android:layout_marginLeft="-34dp"
         android:layout_marginStart="-34dp"
-        android:layout_toEndOf="@+id/editText14"
-        android:layout_toRightOf="@+id/editText14"
+        android:layout_toEndOf="@+id/Floor"
+        android:layout_toRightOf="@+id/Floor"
         android:text="樓"
         android:textColor="#000000"
         android:textSize="25dp" />
@@ -330,28 +322,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/firstName19"
-        android:layout_toEndOf="@+id/editText21"
+        android:layout_toEndOf="@+id/#Ping"
         android:text="坪"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editText21" />
+        android:layout_toRightOf="@+id/#Ping" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText15"
-        android:layout_toEndOf="@+id/editText6"
+        android:layout_alignBottom="@+id/LivingRoom"
+        android:layout_toEndOf="@+id/#Nong"
         android:text="房"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editText6" />
+        android:layout_toRightOf="@+id/#Nong" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText15"
+        android:layout_alignBottom="@+id/LivingRoom"
         android:layout_toEndOf="@+id/spinner3"
         android:text="衛"
         android:textColor="#000000"
@@ -362,33 +354,33 @@
         android:id="@+id/textView9"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText15"
+        android:layout_alignBottom="@+id/LivingRoom"
         android:layout_marginStart="-53dp"
-        android:layout_toEndOf="@+id/editText14"
+        android:layout_toEndOf="@+id/Floor"
         android:text="陽台"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editText14"
+        android:layout_toRightOf="@+id/Floor"
         android:layout_marginLeft="-53dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText15"
-        android:layout_toEndOf="@+id/editText2"
+        android:layout_alignBottom="@+id/LivingRoom"
+        android:layout_toEndOf="@+id/Valley"
         android:text="廳"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editText2" />
+        android:layout_toRightOf="@+id/Valley" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
-        android:layout_toEndOf="@+id/editText2"
-        android:layout_toRightOf="@+id/editText2"
+        android:layout_alignBottom="@+id/Number"
+        android:layout_toEndOf="@+id/Valley"
+        android:layout_toRightOf="@+id/Valley"
         android:text="巷"
         android:textColor="#000000"
         android:textSize="25dp" />

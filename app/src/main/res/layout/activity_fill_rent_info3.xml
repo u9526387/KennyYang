@@ -306,7 +306,7 @@
         android:layout_toRightOf="@+id/firstName23" />
 
     <Button
-        android:id="@+id/NextStep"
+        android:id="@+id/NextStep3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

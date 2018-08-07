@@ -20,7 +20,7 @@ public class ChooseIdentity extends AppCompatActivity {
         TenantR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Regi = new Intent(ChooseIdentity.this,TenantRegister.class);
+                Intent Regi = new Intent(ChooseIdentity.this,TenantRegister2.class);
                 startActivity(Regi);
             }
         });

@@ -20,8 +20,8 @@
         </activity>
         <activity android:name=".ChooseIdentity" />
         <activity android:name=".NormalLogin" />
-        <activity android:name=".TenantInfo" />
         <activity android:name=".TenantRegister" />
+        <activity android:name=".TenantRegister2" />
         <activity android:name=".LandlordRegister" />
         <activity android:name=".NormalRegister" />
         <activity android:name=".homepage" />
@@ -31,7 +31,11 @@
         <activity android:name=".rent_message" />
         <activity android:name=".rent_personalData" />
         <activity android:name=".FillRentInfo1" />
-        <activity android:name=".FillRentInfo2"></activity>
+        <activity android:name=".FillRentInfo2" />
+        <activity android:name=".FillRentInfo3" />
+        <activity android:name=".FillRentInfo4" />
+        <activity android:name=".FillRentInfo5" />
+        <activity android:name=".TenantRegister3"></activity>
     </application>
 
 </manifest>
