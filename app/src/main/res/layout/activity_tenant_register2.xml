@@ -30,6 +30,7 @@
         android:text="科系:"
         android:textColor="#000000"
         android:textSize="28dp" />
+
     <EditText
         android:id="@+id/Departent"
         android:layout_width="239dp"
@@ -54,11 +55,12 @@
         android:text="就讀學校:"
         android:textColor="#000000"
         android:textSize="28dp" />
+
     <EditText
         android:id="@+id/School"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvSchool"
+        android:layout_alignTop="@+id/tvSchool"
         android:layout_toEndOf="@+id/tvSchool"
         android:layout_toRightOf="@+id/tvSchool"
         android:ems="10"
@@ -84,9 +86,9 @@
         android:id="@+id/Address"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvAddress"
-        android:layout_toEndOf="@+id/tvAddress"
-        android:layout_toRightOf="@+id/tvAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvAddress"
         android:ems="10"
         android:hint="請輸入地址"
         android:inputType="textLongMessage" />
@@ -236,17 +238,16 @@
         android:visibility="visible" />
 
     <Button
-        android:id="@+id/FinishRegister"
+        android:id="@+id/Finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="下一步"
-        android:textSize="30dp"
-        android:onClick="jumpTotenant_info2"/>
+        android:textSize="30dp" />
 
 
 </RelativeLayout>

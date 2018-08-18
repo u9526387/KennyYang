@@ -31,7 +31,7 @@
         android:textColor="#000000"
         android:textSize="30dp" />
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/firstName7"
@@ -58,7 +58,7 @@
         android:textSize="30dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/etUsername"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/firstName8"
@@ -73,16 +73,15 @@
 
 
     <Button
-        android:id="@+id/FinishRegister"
+        android:id="@+id/FinishLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText10"
+        android:layout_below="@+id/etPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="63dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="登入"
-        android:textSize="30dp"
-        android:onClick="jumpTohomepage"/>
+        android:textSize="30dp" />
 
 </RelativeLayout>
