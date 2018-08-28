@@ -19,6 +19,11 @@
         <item>伊斯蘭教</item>
     </string-array>
 
+    <string-array name="CanOrCant">
+        <item>可</item>
+        <item>不可</item>
+    </string-array>
+
 
     <string-array name="spn_year">
         <item>1970</item>
@@ -84,6 +89,24 @@
         <item>其他</item>
     </string-array>
 
+    <string-array name="YesorNo">
+        <item>有</item>
+        <item>無</item>
+    </string-array>
+
+    <string-array name="RentTime">
+        <item>三個月</item>
+        <item>半年</item>
+        <item>一年</item>
+        <item>兩年</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="money">
+        <item>面議</item>
+        <item>一個月</item>
+        <item>兩個月</item>
+    </string-array>
 
     <string-array name="HouseType">
         <item>公寓</item>
@@ -116,6 +139,31 @@
         <item>澎湖縣</item>
         <item>連江縣</item>
     </string-array>
+
+
+    <string-array name="who">
+        <item>屋主</item>
+        <item>代理</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+
+
+
 
     <string name="large_text">
 

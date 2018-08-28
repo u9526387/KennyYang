@@ -2,10 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.u9526.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,11 +15,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".ChooseIdentity" />
         <activity android:name=".NormalLogin" />
-        <activity android:name=".TenantInfo" />
+        <activity android:name=".Tenant_register2" />
         <activity android:name=".TenantRegister" />
         <activity android:name=".LandlordRegister" />
         <activity android:name=".NormalRegister" />
@@ -34,9 +30,16 @@
         <activity android:name=".rent_personalData" />
         <activity android:name=".FillRentInfo1" />
         <activity android:name=".FillRentInfo2" />
-        <activity android:name=".verification" />
-        <activity android:name=".PhoneVerification"></activity>
-
+        <activity android:name=".FillRentInfo3" />
+        <activity android:name=".FillRentInfo4" />
+        <activity android:name=".FillRentInfo5" />
+        <activity android:name=".TenantRegister3"></activity>
+        <activity android:name=".FillRentInfo2" />
+        <activity android:name=".FillRentInfo3" />
+        <activity android:name=".FillRentInfo4" />
+        <activity android:name=".rent_homepage__search___attribute" />
+        <activity android:name=".tenant_register3" />
+        <activity android:name=".landlord_register3"></activity>
     </application>
 
 </manifest>

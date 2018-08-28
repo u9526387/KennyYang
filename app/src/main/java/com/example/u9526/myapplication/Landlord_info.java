@@ -1,5 +1,6 @@
 package com.example.u9526.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.annotation.NonNull;
@@ -76,5 +77,9 @@ public class Landlord_info extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+    public void jumpTolandlord_register3(View v){
+        Intent lttt=new Intent(this,landlord_register3.class);
+        startActivity(lttt);
     }
 }

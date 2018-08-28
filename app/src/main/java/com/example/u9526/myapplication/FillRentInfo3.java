@@ -15,12 +15,12 @@ public class FillRentInfo3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_rent_info3);
 
-        NextStep = (Button) findViewById(R.id.NextStep);
+        NextStep = (Button) findViewById(R.id.NextStep3);
         NextStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(FillRentInfo3.this,FillRentInfo4.class);
-                startActivity(i);
+                Intent tt= new Intent(FillRentInfo3.this,FillRentInfo4.class);
+                startActivity(tt);
             }
         });
 

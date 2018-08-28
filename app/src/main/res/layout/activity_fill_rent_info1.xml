@@ -74,7 +74,7 @@
         android:gravity="center"
         android:text="繼續填寫"
         android:textSize="30dp"
-        tools:ignore="OnClick" />
+         />
 
 
 </RelativeLayout>

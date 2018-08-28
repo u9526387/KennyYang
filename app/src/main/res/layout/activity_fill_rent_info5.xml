@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillRentInfo5">
+
+
+    <TextView
+        android:id="@+id/firstName43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="111dp"
+        android:text="Email:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName37"
+        android:layout_marginTop="-193dp"
+        android:layout_toEndOf="@+id/firstName33"
+        android:text="AM"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/firstName33" />
+
+    <TextView
+        android:id="@+id/firstName42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName37"
+        android:layout_marginStart="-92dp"
+        android:layout_marginTop="-193dp"
+        android:layout_toEndOf="@+id/spinner12"
+        android:text="PM"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/spinner12"
+        android:layout_marginLeft="-92dp" />
+
+    <TextView
+        android:id="@+id/firstName40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName37"
+        android:layout_marginTop="-193dp"
+        android:layout_toStartOf="@+id/imageView6"
+        android:text="~"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toLeftOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/firstName36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="238dp"
+        android:text="其他電話:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="193dp"
+        android:text="可聯絡時間:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="房屋資料"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/firstName26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="房屋照片:"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/firstName33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="205dp"
+        android:text="聯絡人:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:text="行動電話:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstName34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName33"
+        android:layout_toStartOf="@+id/imageView3"
+        android:text="姓名:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="104dp"
+        android:layout_height="49dp"
+        android:layout_alignBaseline="@+id/firstName26"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:background="@drawable/blue"
+        android:text="點此上傳"
+        android:textSize="16dp"
+        android:layout_marginLeft="116dp"
+        android:layout_alignParentLeft="true" />
+
+
+    <Spinner
+        android:id="@+id/spinner10"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/firstName33"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="84dp"
+        android:entries="@array/who"
+        android:layout_marginLeft="84dp"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/spinner11"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName37"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-193dp"
+        android:entries="@array/time" />
+
+    <Spinner
+        android:id="@+id/spinner12"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/firstName37"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="-193dp"
+        android:entries="@array/time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="92dp" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/firstName33"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="274dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/firstName35"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="274dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/firstName36"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/editText25"
+        android:layout_width="274dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/firstName43"
+        android:layout_toEndOf="@+id/firstName43"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/firstName43" />
+
+
+    <Button
+        android:id="@+id/FinishStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:gravity="center"
+        android:text="完成填寫"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

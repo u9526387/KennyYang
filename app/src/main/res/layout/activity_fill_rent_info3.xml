@@ -81,6 +81,7 @@
         android:layout_height="35dp"
         android:layout_alignBottom="@+id/firstName22"
         android:layout_toEndOf="@+id/firstName22"
+
         android:layout_toRightOf="@+id/firstName22" />
 
     <Spinner
@@ -90,6 +91,7 @@
         android:layout_alignBottom="@+id/firstName23"
         android:layout_marginStart="-79dp"
         android:layout_toEndOf="@+id/spinner7"
+
         android:layout_marginLeft="-79dp"
         android:layout_toRightOf="@+id/spinner7" />
 
@@ -289,6 +291,7 @@
         android:layout_height="34dp"
         android:layout_alignTop="@+id/spinner7"
         android:layout_toEndOf="@+id/firstName21"
+
         android:layout_toRightOf="@+id/firstName21" />
 
     <EditText
@@ -302,7 +305,7 @@
         android:layout_toRightOf="@+id/firstName23" />
 
     <Button
-        android:id="@+id/NextStep"
+        android:id="@+id/NextStep3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

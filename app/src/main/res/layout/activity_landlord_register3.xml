@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.u9526.myapplication.tenant_register3">
+
+
+
+
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="屋主註冊"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/tvExpertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="5dp"
+        android:text="專長及自我介紹:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/tvInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvPet"
+        android:paddingTop="5dp"
+        android:text="興趣:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tvSmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ChooseIdentity"
+        android:paddingTop="5dp"
+        android:text="是否抽煙:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/tvPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSmoke"
+        android:paddingTop="5dp"
+        android:text="是否有養寵物:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
+
+    <CheckBox
+        android:id="@+id/inChess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvInterest"
+        android:layout_toEndOf="@+id/tvInterest"
+        android:layout_toRightOf="@+id/tvInterest"
+        android:textSize="24dp"
+        android:text="象棋" />
+
+    <CheckBox
+        android:id="@+id/inChess2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/inChess"
+        android:layout_toEndOf="@+id/inChess"
+        android:layout_toRightOf="@+id/inChess"
+        android:textSize="24dp"
+        android:text="西洋棋" />
+
+    <CheckBox
+        android:id="@+id/inChess3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inChess2"
+        android:layout_toEndOf="@+id/inChess2"
+        android:layout_toRightOf="@+id/inChess2"
+        android:textSize="24dp"
+        android:text="麻將" />
+
+    <CheckBox
+        android:id="@+id/inMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvInterest"
+        android:text="樂器"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:id="@+id/inDance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inChess2"
+        android:layout_toEndOf="@+id/inMusic"
+        android:layout_toRightOf="@+id/inMusic"
+        android:textSize="24dp"
+        android:text="舞蹈" />
+
+    <CheckBox
+        android:id="@+id/inTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inDance"
+        android:layout_toEndOf="@+id/inDance"
+        android:layout_toRightOf="@+id/inDance"
+        android:textSize="24dp"
+        android:text="國藝栽種" />
+
+    <CheckBox
+        android:id="@+id/inPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inTree"
+        android:textSize="24dp"
+        android:text="攝影" />
+
+    <CheckBox
+        android:id="@+id/inHiking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/inPhoto"
+        android:layout_alignBottom="@+id/inPhoto"
+        android:textSize="24dp"
+        android:text="爬山" />
+
+    <CheckBox
+        android:id="@+id/inTvgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/inHiking"
+        android:layout_toRightOf="@+id/inHiking"
+        android:layout_alignBottom="@+id/inHiking"
+        android:textSize="24dp"
+        android:text="電視遊樂器" />
+
+    <TextView
+        android:id="@+id/self"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvExpertise"
+        android:text="來個100字介紹吧" />
+    <Button
+        android:id="@+id/FinishRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/lightgreencolorstyle"
+        android:gravity="center"
+        android:text="完成註冊"
+        android:textSize="30dp"
+        android:onClick="jumpToMain"/>
+
+
+</RelativeLayout>

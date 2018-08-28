@@ -1,18 +1,15 @@
 package com.example.u9526.myapplication;
 
-import android.support.annotation.NonNull;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class TenantInfo extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+public class Tenant_register2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
 
 
@@ -86,6 +83,10 @@ public class TenantInfo extends AppCompatActivity implements AdapterView.OnItemS
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+    public void jumpTotenant_info2(View v){
+        Intent tenant_info2=new Intent(this,tenant_register3.class);
+        startActivity(tenant_info2);
     }
 
 }
