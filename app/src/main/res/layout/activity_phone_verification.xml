@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerification">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="160dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:layout_alignParentLeft="true">
+
+        <Spinner
+            android:id="@+id/spinnerCountries"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:digits="0123456789"
+            android:hint="enter your number"
+            android:inputType="phone"
+            android:maxLength="9"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="234dp"
+        android:gravity="center"
+        android:text="請在輸入一次手機號碼以供驗證"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/checkBtn"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:text="驗證"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/background" />
+</RelativeLayout>

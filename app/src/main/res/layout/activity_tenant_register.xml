@@ -139,7 +139,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextPhone"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

@@ -16,27 +16,29 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class NormalRegister extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_register);
 
         final EditText etName = (EditText) findViewById(R.id.etName);
-        final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final EditText etTextPhone = (EditText) findViewById(R.id.etTextPhone);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
-        final EditText passworcheck = (EditText) findViewById(R.id.passwordcheck);
-        final Button FinishRegister = (Button) findViewById(R.id.FinishRegister);
+        final EditText passworcheck = (EditText) findViewById(R.id.checkpassword);
+        final Button Confirm = (Button) findViewById(R.id.Confirm);
 
-        FinishRegister.setOnClickListener(new View.OnClickListener() {
+        Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String name = etName.getText().toString();
-                final String username = etUsername.getText().toString();
+                final String username = etTextPhone.getText().toString();
                 final String password = etPassword.getText().toString();
-                final String passwordcheck = passworcheck.getText().toString();
+                final String passwordck = passworcheck.getText().toString();
 
 
-                Response.Listener<String> responseListener = new Response.Listener<String>(){
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                     @Override
                     public void onResponse(String response) {
@@ -44,19 +46,24 @@ public class NormalRegister extends AppCompatActivity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
-                            if(success && (password == passwordcheck)){//PROBLEM
-                                Intent intent = new Intent(NormalRegister.this,NormalLogin.class);
+                            if (success) {//PROBLEM
+                                Intent intent = new Intent(NormalRegister.this, PhoneVerification.class);
                                 NormalRegister.this.startActivity(intent);
-                            }else if(password != passwordcheck){
-                                AlertDialog.Builder builder  = new AlertDialog.Builder(NormalRegister.this);
-                                builder.setMessage("checkpassword wrong")
-                                        .setNegativeButton("Retry" ,null)
+                            }else if("".equals(passwordck)) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
+                                        builder.setMessage("驗證不得為空")
+                                        .setPositiveButton("Retry", null)
+                                        .show();
+                            }/*else if(password.equals(passwordck)){//想辦法不等於
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
+                                        builder.setMessage("驗證密碼不相同")
+                                        .setNegativeButton("Retry", null)
                                         .create()
                                         .show();
-                            }else{
-                                AlertDialog.Builder builder  = new AlertDialog.Builder(NormalRegister.this);
-                                builder.setMessage("Register Fail")
-                                        .setNegativeButton("Retry" ,null)
+                            }*/else{
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
+                                builder.setMessage("")
+                                        .setNegativeButton("Retry", null)
                                         .create()
                                         .show();
                             }
@@ -73,6 +80,6 @@ public class NormalRegister extends AppCompatActivity {
 
             }
         });
-
     }
+
 }
