@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.RegisterLogin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.EditText;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.u9526.myapplication.R;
+import com.example.u9526.myapplication.homepage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,31 +38,31 @@ public class NormalLogin extends AppCompatActivity {
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                                                    try {
-                                JSONObject jsonResponse = new JSONObject(response);
-                                boolean success = jsonResponse.getBoolean("success");
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
 
-                                if(success && username!= null && password != null){
-                                    Intent intent = new Intent(NormalLogin.this, homepage.class);
-                                    NormalLogin.this.startActivity(intent);
-                                }else{
-                                    AlertDialog.Builder builder  = new AlertDialog.Builder(NormalLogin.this);
-                                    builder.setMessage("Login Fail")
-                                            .setNegativeButton("Retry" ,null)
-                                            .create()
-                                            .show();
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                                    }
+                            if (success && username != null && password != null) {
+                                Intent intent = new Intent(NormalLogin.this, homepage.class);
+                                NormalLogin.this.startActivity(intent);
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalLogin.this);
+                                builder.setMessage("Login Fail")
+                                        .setNegativeButton("Retry", null)
+                                        .create()
+                                        .show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
                 };
-                LoginRequest loginRequest = new LoginRequest(username ,password , responseListener);
+                LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(NormalLogin.this);
                 queue.add(loginRequest);
             }
         });
     }
 
-    }
+}
 

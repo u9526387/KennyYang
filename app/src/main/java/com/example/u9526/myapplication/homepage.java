@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.u9526.myapplication.Rent.rent_homepage;
+
 public class homepage extends AppCompatActivity {
 
     @Override

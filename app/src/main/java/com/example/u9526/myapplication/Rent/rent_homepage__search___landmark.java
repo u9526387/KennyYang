@@ -1,7 +1,9 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.Rent;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.u9526.myapplication.R;
 
 public class rent_homepage__search___landmark extends AppCompatActivity {
 

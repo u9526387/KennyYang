@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.RegisterLogin;
 
 //註冊程式碼
 

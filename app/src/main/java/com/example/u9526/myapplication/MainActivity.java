@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.u9526.myapplication.RegisterLogin.ChooseIdentity;
+import com.example.u9526.myapplication.RegisterLogin.NormalLogin;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button Register;

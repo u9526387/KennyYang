@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandlordRegister">
+    tools:context=".RegisterLandlord.LandlordRegister">
 
     <EditText
         android:id="@+id/editText11"
@@ -30,17 +30,14 @@
         android:layout_alignLeft="@+id/firstName2" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="140dp"
+        android:id="@+id/LandlordName"
+        android:layout_width="304dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/firstName2"
         android:ems="10"
-        android:hint="請輸入姓氏"
+        android:hint="請輸入姓名"
         android:inputType="textPersonName" />
 
     <TextView
@@ -105,36 +102,12 @@
         android:id="@+id/firstName3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_marginEnd="-56dp"
-        android:layout_toStartOf="@+id/editText3"
-        android:text="姓:"
-        android:textColor="#000000"
-        android:textSize="30dp"
-        android:layout_marginRight="-56dp"
-        android:layout_toLeftOf="@+id/editText3" />
-
-    <TextView
-        android:id="@+id/lastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_toEndOf="@+id/editText3"
-        android:layout_toRightOf="@+id/editText3"
-        android:text="名:"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/LandlordName"
+        android:text="姓名:"
         android:textColor="#000000"
         android:textSize="30dp" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText3"
-        android:layout_toEndOf="@+id/lastName"
-        android:layout_toRightOf="@+id/lastName"
-        android:ems="10"
-        android:hint="請輸入名字"
-        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/ChooseIdentity"
@@ -150,15 +123,14 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/LandlordPhone"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/firstName8"
         android:ems="10"
         android:hint="請輸入手機號碼"
-        android:inputType="phone"
-        android:layout_alignParentRight="true" />
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/Confirm"
@@ -184,7 +156,7 @@
         android:layout_alignParentRight="true" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/LandlordPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/firstName7"

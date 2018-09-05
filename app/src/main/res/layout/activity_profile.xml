@@ -1,0 +1,544 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.u9526.myapplication.Rent.Profile">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="學校資訊"
+                android:textColor="@color/fragment_profile_color_text_title1"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/fragment_profile_color_layout_line1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/profile_user_img_layout1"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp">
+                            <!--____________________________________________________________________________使用者頭相-->
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_user_img"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@mipmap/fragment_profile_user_img"
+                                app:civ_border_color="#aeaeae"
+                                app:civ_border_width="2dp" />
+                            <!--____________________________________________________________________________使用者頭相-->
+                            <!--____________________________________________________________________________使用者拍照-->
+                            <ImageButton
+                                android:id="@+id/profile_user_camera"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="60dp"
+                                android:background="@mipmap/pencil" />
+                            <!--____________________________________________________________________________使用者拍照-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_toRightOf="@+id/profile_user_img_layout1">
+
+                            <!--_____________________________________________________________________________使用者名稱-->
+                            <TextView
+                                android:id="@+id/profile_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35dp"
+                                android:maxLength="4"
+                                android:maxLines="1"
+                                android:text="弦哥Kenny"
+                                android:textSize="16dp" />
+
+                            <TextView
+
+                                android:id="@+id/profile_user_sex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/profile_user_school"
+                                android:layout_alignStart="@+id/profile_user_major"
+                                android:text="性別"
+                                android:textSize="16dp" />
+
+                            <!--______________________________________________________________________________使用者學校-->
+                            <TextView
+                                android:id="@+id/profile_user_school"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_user_name"
+                                android:layout_marginTop="10dp"
+                                android:text="輔仁大學"
+                                android:textSize="16dp" />
+                            <!--______________________________________________________________________________使用者科系-->
+                            <TextView
+                                android:id="@+id/profile_user_major"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/profile_user_school"
+                                android:text="資訊管理學系"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview1"
+                android:layout_centerHorizontal="true"
+                android:text="我的基本資訊"
+                android:textColor="@color/fragment_profile_color_text_title1"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/fragment_profile_color_layout_line2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="269dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true">
+                        <!--______________________________________________________________________________生日資訊layout-->
+                        <RelativeLayout
+                            android:id="@+id/edit1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/birth_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="生日"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="81dp"
+                                android:layout_toLeftOf="@id/profile_user_class1_button"
+                                android:layout_toRightOf="@+id/birth_title"
+                                android:text="1997年02月21日"
+                                android:textSize="16dp" />
+
+                            <ImageButton
+                                android:id="@+id/profile_user_class1_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@mipmap/pencil" />
+                        </RelativeLayout>
+                        <!--______________________________________________________________________________感情狀態layout-->
+                        <RelativeLayout
+                            android:id="@+id/edit2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit1"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/emotional_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="感情狀態"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_emotional_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/emotional_title"
+                                android:text="單身"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                        <!--______________________________________________________________________________興趣專長layout-->
+                        <RelativeLayout
+                            android:id="@+id/edit3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit2"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/hobby_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:text="我的興趣"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_hobby"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/hobby_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="打籃球、健身"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit3"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/club_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="參加的社團"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_club"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toRightOf="@+id/club_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="國青社、英語演講社"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit4"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/favorite_class_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="喜歡的課程"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_favorite_class"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toRightOf="@+id/favorite_class_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="java程式設計課程"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit5"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/favorite_city_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="喜歡的城市"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_favorite_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toRightOf="@+id/favorite_city_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="彰化"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit62"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit6"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/favorite_religion_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="宗教信仰"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_favorite_religion"
+                                android:layout_width="211dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/favorite_religion_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="道教"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview2"
+                android:layout_centerHorizontal="true"
+                android:text="我的心聲"
+                android:textColor="@color/fragment_profile_color_text_title1"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title3"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/fragment_profile_color_layout_line3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/edit7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/confusion_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="最近的困惑"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_confusion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toEndOf="@+id/confusion_title"
+                                android:text="怎麼Debug"
+                                android:textSize="16dp" />
+
+                            <ImageButton
+                                android:id="@+id/profile_user_class2_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@mipmap/pencil" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit7"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/favorite_talent_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="可交換才藝"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_talent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toRightOf="@+id/favorite_talent_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="麥胞"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/edit9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit8"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/favorite_dream_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="我的夢想"
+                                android:textColor="@color/fragment_profile_color_contain_text_title"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_user_dream"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="51dp"
+                                android:layout_toRightOf="@+id/favorite_dream_title"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="成為一個app開發者"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
+
+

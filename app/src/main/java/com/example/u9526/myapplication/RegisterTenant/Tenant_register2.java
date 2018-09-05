@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.RegisterTenant;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -16,6 +16,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.u9526.myapplication.Constants;
+import com.example.u9526.myapplication.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,45 +25,45 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TenantRegister extends AppCompatActivity implements View.OnClickListener {
+public class Tenant_register2 extends AppCompatActivity implements View.OnClickListener {
 
 
-    private EditText editTextusername, editTextphoneNumber, editTextpassword;
-    private Button Jump;
+    private EditText editTextAddress, editTextSchool, editTextDepartent, editTextIDnumber;
+    private Button Nextstep;
     private ProgressDialog progressDialog;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tenant_register);
+        setContentView(R.layout.activity_tenant_register2);
 
-        editTextusername = (EditText) findViewById(R.id.username);
-        editTextphoneNumber = (EditText) findViewById(R.id.phoneNumber);
-        editTextpassword = (EditText) findViewById(R.id.password);
+        editTextAddress = (EditText) findViewById(R.id.Address);
+        editTextIDnumber = (EditText) findViewById(R.id.IDnumbers);
+        editTextSchool = (EditText) findViewById(R.id.School);
+        editTextDepartent = (EditText) findViewById(R.id.Departent);
 
-
-        Jump = (Button) findViewById(R.id.jumpTotr2);
+        Nextstep = (Button) findViewById(R.id.Finish);
 
         progressDialog = new ProgressDialog(this);
 
-
-        Jump.setOnClickListener(this);
+        Nextstep.setOnClickListener(this);
 
 
     }
 
 
-    private void tenantRegister() {
-        final String username = editTextusername.getText().toString().trim();
-        final String phoneNumber = editTextphoneNumber.getText().toString().trim();
-        final String password = editTextpassword.getText().toString().trim();
+    private void registerUser() {
+        final String Address = editTextAddress.getText().toString().trim();
+        final String IDnumber = editTextIDnumber.getText().toString().trim();
+        final String School = editTextSchool.getText().toString().trim();
+        final String Departent = editTextDepartent.getText().toString().trim();
 
         progressDialog.setMessage("Register user ......");
         progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Constants.URL_TENANT_REGISTER,
+                Constants.URL_REGISTER,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -83,15 +85,15 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
                     public void onErrorResponse(VolleyError error) {
                         progressDialog.hide();
                         Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
-
                     }
                 }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("username", username);
-                params.put("phoneNumber", phoneNumber);
-                params.put("password", password);
+                params.put("Address", Address);
+                params.put("IDnumber", IDnumber);
+                params.put("School", School);
+                params.put("Departent", Departent);
                 return params;
             }
         };
@@ -105,11 +107,11 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        if (view == Jump)
-            tenantRegister();
+        if (view == Nextstep)
+            registerUser();
 
 
-        Intent Next = new Intent(this, Tenant_register2.class);
+        Intent Next = new Intent(this, tenant_register3.class);
         startActivity(Next);
     }
 

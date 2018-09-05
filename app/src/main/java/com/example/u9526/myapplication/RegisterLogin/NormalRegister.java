@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.RegisterLogin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.u9526.myapplication.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,15 +45,9 @@ public class NormalRegister extends AppCompatActivity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
-                            if(success && (password == passwordcheck)){//PROBLEM
+                            if (success) {//PROBLEM
                                 Intent intent = new Intent(NormalRegister.this,NormalLogin.class);
                                 NormalRegister.this.startActivity(intent);
-                            }else if(password != passwordcheck){
-                                AlertDialog.Builder builder  = new AlertDialog.Builder(NormalRegister.this);
-                                builder.setMessage("checkpassword wrong")
-                                        .setNegativeButton("Retry" ,null)
-                                        .create()
-                                        .show();
                             }else{
                                 AlertDialog.Builder builder  = new AlertDialog.Builder(NormalRegister.this);
                                 builder.setMessage("Register Fail")

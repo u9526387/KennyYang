@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.RegisterLogin;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
