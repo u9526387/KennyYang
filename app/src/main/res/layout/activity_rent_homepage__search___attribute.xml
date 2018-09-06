@@ -1,69 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.rent_homepage__search___attribute">
+    tools:context="com.example.u9526.myapplication.Rent.rent_homepage__search___attribute">
+
+
+        <TextView
+            android:id="@+id/ChooseIdentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFCDD2"
+            android:gravity="center"
+            android:text="依屬性搜尋"
+            android:textColor="#000000"
+            android:textSize="44sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
 
 
 
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="依屬性搜尋"
-        android:textColor="#000000"
-        android:textSize="44sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChooseIdentity"
+            android:text="租金" />
 
 
-    <TextView
-        android:id="@+id/money"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/ChooseIdentity"
-        android:text="租金" />
-    <Spinner
+
+        <Spinner
         android:id="@+id/spinnerMoney"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/money"/>
 
 
 
 
 
-    <TextView
+        <TextView
         android:id="@+id/floor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/spinnerMoney"
         android:text="樓層" />
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerFloor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/floor"/>
 
 
 
-    <TextView
+        <TextView
         android:id="@+id/pet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +69,7 @@
         android:layout_below="@id/spinnerFloor"
         android:text="寵物" />
 
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerPet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,7 +77,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/pet" />
 
-    <TextView
+        <TextView
         android:id="@+id/cup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,7 +85,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/spinnerPet"
         android:text="罩杯大小" />
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerCup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,7 +93,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/cup" />
 
-    <TextView
+        <TextView
         android:id="@+id/smoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,7 +101,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/spinnerCup"
         android:text="有無抽煙" />
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerSmoke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -113,7 +110,7 @@
         android:layout_below="@+id/smoke" />
 
 
-    <TextView
+        <TextView
         android:id="@+id/family"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -121,7 +118,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/spinnerSmoke"
         android:text="有無家屬" />
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerFamily"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -132,7 +129,7 @@
 
 
 
-    <TextView
+        <TextView
         android:id="@+id/shower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -140,7 +137,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/spinnerFamily"
         android:text="獨立浴室" />
-    <Spinner
+        <Spinner
         android:id="@+id/spinnerShower"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -151,13 +148,51 @@
 
 
 
+        <TextView
+        android:id="@+id/carseat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinnerShower"
+        android:text="車位" />
+        <Spinner
+        android:id="@+id/spinnerCarseat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carseat" />
+
+
+
+
+        <TextView
+        android:id="@+id/elevator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinnerCarseat"
+        android:text="獨立浴室" />
+        <Spinner
+        android:id="@+id/spinnerElevator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/elevator" />
+
+
+
+
     <TextView
         android:id="@+id/facility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/spinnerShower"
+        android:layout_below="@id/spinnerElevator"
         android:text="設施" />
 
     <CheckBox
@@ -167,7 +202,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/facility"
-        android:text="CheckBox" />
+        android:textSize="18dp"
+        android:text="洗衣機" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -176,25 +212,30 @@
         android:layout_alignTop="@+id/checkBox"
         android:layout_toEndOf="@+id/checkBox"
         android:layout_toRightOf="@+id/checkBox"
-        android:text="CheckBox" />
+        android:textSize="18dp"
+        android:text="冰箱" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/checkBox2"
+        android:layout_alignBaseline="@+id/checkBox2"
+        android:layout_alignBottom="@+id/checkBox2"
         android:layout_toEndOf="@+id/checkBox2"
         android:layout_toRightOf="@+id/checkBox2"
-        android:text="CheckBox" />
+        android:text="電視"
+        android:textSize="18dp" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/checkBox3"
-        android:text="CheckBox" />
+        android:layout_alignBaseline="@+id/checkBox3"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_toEndOf="@+id/checkBox3"
+        android:layout_toRightOf="@+id/checkBox3"
+        android:text="冷氣"
+        android:textSize="18dp" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -203,34 +244,46 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/checkBox"
-        android:text="CheckBox" />
+        android:textSize="18dp"
+        android:text="熱水器" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkBox2"
-        android:layout_toEndOf="@+id/checkBox5"
-        android:layout_toRightOf="@+id/checkBox5"
-        android:text="CheckBox" />
+        android:layout_toEndOf="@+id/checkBox"
+        android:layout_toRightOf="@+id/checkBox"
+        android:text="網路"
+        android:textSize="18dp" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox3"
+        android:layout_alignBaseline="@+id/checkBox6"
+        android:layout_alignBottom="@+id/checkBox6"
         android:layout_toEndOf="@+id/checkBox2"
         android:layout_toRightOf="@+id/checkBox2"
-        android:text="CheckBox" />
+        android:text="第四台"
+        android:textSize="18dp" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/checkBox4"
-        android:text="CheckBox" />
+        android:layout_alignBaseline="@+id/checkBox7"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_toEndOf="@+id/checkBox7"
+        android:layout_toRightOf="@+id/checkBox7"
+        android:text="天然瓦斯"
+        android:textSize="18dp" />
+
+
+
+
+
+
 
 
 </RelativeLayout>

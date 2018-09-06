@@ -1,6 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5b70e6</color>
-    <color name="colorPrimaryDark">#26cfc4</color>
-    <color name="colorAccent">#12e6b8</color>
+
+
+    <!--_______________________________________________________________________________repeat_login__-->
+    <color name="color_repeat_login_text">#c11919</color>
+    <!--_______________________________________________________________________________Splash_Screen -->
+    <color name="splash_logon_ringProgressColor">#65e0ff</color>
+    <color name="splash_logon_ringColor">#ffff</color>
+    <color name="splash_logon_textColor">#ffff</color>
+    <color name="splash_logon_text">#e4e4e4</color>
+
+
+    <!--_______________________________________________________________________________Activity_login-->
+    <color name="color_login_background_start">#104873</color>
+    <color name="color_login_background_stop">#d4fe485a</color>
+
+    <color name="color_login_button">#ffff</color>
+    <color name="color_login_button_register">#00ffffff</color>
+    <color name="color_login_edit_border">#FFFF</color>
+    <color name="color_login_edit_border_select">#51e8ff</color>
+    <color name="color_login_String">#FFFF</color>
+    <color name="transparent">#18000000</color>
+
+
+    <!--_______________________________________________________________________________Activity_register-->
+    <color name="color_register_email_hint">#c8ffffff</color>
+    <color name="color_register_dark_hint">#b5104873</color>
+    <color name="color_register_radio_button">#ffff</color>
+    <color name="color_register_spinner_text_color">#ff7b7d</color>
+    <color name="color_register_spinner_background">#104873</color>
+    <!--________________________________________________________________________________Activity_home-->
+    <color name="activity_home_background">#ffffff</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+
+    <!--________________________________________________________________________________Activity_pair-->
+    <color name="colorPrimary_pair">#3F51B5</color>
+    <color name="colorPrimaryDark_pair">#273833</color>
+    <color name="colorAccent_pair">#fdf2df</color>
+    <!--___________________________________________________________________________Activity_lord_pair-->
+    <color name="colorPrimary_pair_check">#3fabb5</color>
+    <color name="colorPrimaryDark_pair_check">#272f38</color>
+    <color name="colorAccent_pair_check_button">#ebd6ab</color>
+    <color name="colorAccent_pair_check">#104873</color>
+    <color name="button_waiting">#c2c2c2</color>
+    <color name="button_waiting_text">#636363</color>
+    <!--___________________________________________________________________________Activity_angel_pair-->
+    <color name="colorPrimary_angel_pair">#d4fe485a</color>
+    <color name="colorPrimaryDark_angel_pair">#c1313f</color>
+    <color name="colorAccent_angel_pair_check_button">#ebd6ab</color>
+    <color name="colorAccent_angel_pair_check">#104873</color>
+
+    <!--____________________________________________________________________________FloatingActionBar-->
+    <color name="fab_menu_button_colorNormal">#ff6977</color>
+    <color name="fab_menu_button_colorPressed">#c74866</color>
+    <color name="fab_menu_button_colorRipple">#c1313f</color>
+    <color name="after_open_fab_background">#83847c7b</color>
+
+    <color name="fab_button_color_shutdown">#c1313f</color>
+    <color name="fab_button_color_set">#f74771</color>
+    <color name="fab_button_color_friends">#ff6388</color>
+    <!--_____________________________________________________________________________Fragment_home___-->
+    <color name="colorPrimary_space">#3F51B5</color>
+    <color name="colorPrimaryDark_space">#273833</color>
+    <color name="black">#000</color>
+    <color name="button_true">#fdf2df</color>
+    <color name="button_false">#ff6977</color>
+    <color name="lightorangedark">#ebd6ab</color>
+    <color name="colorAccent_space">#FF4081</color>
+    <color name="chat_pink">#FF44AA</color>
+
+    <!--_____________________________________________________________________________Fragment_profile-->
+    <color name="fragment_profile_color_background_start">#fbe4df</color>
+    <color name="fragment_profile_color_background_stop">#8e88b7</color>
+    <color name="fragment_profile_color_contain_background">#8e88b7</color>
+    <color name="fragment_profile_color_text">#353535</color>
+    <color name="fragment_profile_color_contain_text_title">#6b6b6b</color>
+
+    <color name="fragment_profile_color_text_title1">#ffffff</color>
+    <color name="fragment_profile_color_text_title2">#ff6388</color>
+    <color name="fragment_profile_color_text_title3">#104873</color>
+
+
+    <color name="fragment_profile_color_layout_line1">#42e79f</color>
+    <color name="fragment_profile_color_layout_line2">#d4fe485a</color>
+    <color name="fragment_profile_color_layout_line3">#26d4ff</color>
+    <!--________________________________________________________________________Fragment_profile_edit-->
+    <color name="colorPrimary_profile_edit">#26d4ff</color>
+    <color name="colorPrimaryDark_profile_edit">#104873</color>
+    <color name="colorAccent_profile_edit">#104873</color>
+    <color name="textColorHint">#104873</color>
+    <color name="counterText">#d4fe485a</color>
+
+
+    <color name="colorPrimary_profile_edit2">#26d4ff</color>
+    <color name="colorPrimaryDark_profile_edit2">#104873</color>
+    <color name="colorAccent_profile_edit2">#FFFFFF</color>
+    <!--________________________________________________________________________Fragment_profile_edit-->
+    <color name="colorPrimary">#d4fe485a</color>
+    <color name="colorPrimaryDark">#c1313f</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <!--________________________________________________________________________Kou_Bie_Fju__________-->
+    <color name="kou_bie_edit_button">#c6fe485a</color>
+    <color name="kou_bie_title">#8c8c8c</color>
+    <color name="kou_bie_text">#353535</color>
+    <!--________________________________________________________________________Kou_Bei_FJU_message__-->
+    <color name="colorPrimary_Kou_Bei_Fju_Article">#006AA6</color>
+    <color name="colorPrimaryDark_Kou_Bei_Fju_Article">#00324E</color>
+    <color name="colorAccent_Kou_Bei_Fju_Article">#fffffe</color>
+    <color name="colorPrimaryDark_Kou_Bei_Fju_Article_button_divider">#d9d9d9</color>
+    <color name="kou_bie_article_title">#3b3b3b</color>
+    <color name="kou_bie_article_text">#273a50</color>
+    <color name="kou_bie_article_message_button">#ffffff</color>
+    <color name="kou_bie_article_message_button_press">#c6fe485a</color>
+    <color name="kou_bie_article_message_button_press2">#d277d2ff</color>
+    <!--________________________________________________________________________Cow_Bie_FJU_message__-->
+    <color name="cow_bei_edit_button">#5392d1</color>
+
+    <!--________________________________________________________________________Friend_list__________-->
+    <color name="friend_list_gridview_item_colorPrimary">#2D3E50</color>
+    <color name="friend_list_gridview_item_colorPrimaryDark">#243141</color>
+    <color name="friend_list_gridview_item_colorAccent">#FFFFFF</color>
+    <color name="friend_list_gridview_item_start">#ce131313</color>
+    <color name="friend_list_gridview_item_end">#00ffffff</color>
+    <color name="friend_list_gridview_item_name">#ffffff</color>
+    <color name="friend_list_gridview_item_major">#9f9f9f</color>
+    <color name="friend_list_gridview_item_background">#E0E0E0</color>
+    <!--________________________________________________________________________Friend_chat__________-->
+    <color name="friend_chat_colorPrimary">#464E65</color>
+    <color name="friend_chat_colorPrimaryDark">#3C4258</color>
+    <color name="friend_chat_colorAccent">#FFFFFF</color>
+    <color name="friend_chat_button">#878CA1</color>
+    <color name="friend_chat_text_color">#f8262626</color>
+    <color name="friend_chat_border">#BEF18C</color>
+    <color name="friend_chat_border2">#E4E8EB</color>
+    <!--_______________________________________________________Kou_Bie_Fju_Article_View__________-->
+    <color name="kou_bie_article_view_edit_colorPrimary">#c6ff6b93</color>
+    <color name="kou_bie_article_view_edit_colorPrimaryDark">#c1316f</color>
+    <color name="kou_bie_article_view_edit_colorAccent">#FFFFFF</color>
+    <color name="edittext_stop_line">#f8262626</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
 </resources>

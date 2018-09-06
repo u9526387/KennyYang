@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.u9526.myapplication.Rent.rent_homepage;
+
 public class homepage extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,7 @@ public class homepage extends AppCompatActivity {
 
     }
     public void jumpTorent_homepage(View v){
-        Intent jumptorent_homepage=new Intent(this,rent_homepgae.class);
+        Intent jumptorent_homepage = new Intent(this, rent_homepage.class);
         startActivity(jumptorent_homepage);
 
     }

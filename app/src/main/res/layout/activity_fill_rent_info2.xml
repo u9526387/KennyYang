@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillRentInfo2">
+    tools:context=".HouseInfo.FillRentInfo2">
 
     <CheckBox
         android:id="@+id/checkBox7"
