@@ -49,13 +49,12 @@
         android:id="@+id/firstName40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/firstName37"
-        android:layout_marginTop="-193dp"
-        android:layout_toStartOf="@+id/imageView6"
+        android:layout_alignEnd="@+id/spinner10"
+        android:layout_alignTop="@+id/firstName39"
         android:text="~"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toLeftOf="@+id/imageView6" />
+        android:layout_alignRight="@+id/spinner10" />
 
     <TextView
         android:id="@+id/firstName36"

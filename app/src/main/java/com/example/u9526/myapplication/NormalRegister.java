@@ -47,20 +47,9 @@ public class NormalRegister extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {//PROBLEM
-                                Intent intent = new Intent(NormalRegister.this, PhoneVerification.class);
+                                Intent intent = new Intent(NormalRegister.this, NormalLogin.class);
                                 NormalRegister.this.startActivity(intent);
-                            }else if("".equals(passwordck)) {
-                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
-                                        builder.setMessage("驗證不得為空")
-                                        .setPositiveButton("Retry", null)
-                                        .show();
-                            }/*else if(password.equals(passwordck)){//想辦法不等於
-                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
-                                        builder.setMessage("驗證密碼不相同")
-                                        .setNegativeButton("Retry", null)
-                                        .create()
-                                        .show();
-                            }*/else{
+                            }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
                                 builder.setMessage("")
                                         .setNegativeButton("Retry", null)

@@ -33,13 +33,15 @@
         android:id="@+id/editText3"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText5"
-        android:layout_alignLeft="@+id/editText10"
-        android:layout_alignStart="@+id/editText10"
-        android:layout_marginBottom="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="103dp"
         android:ems="10"
         android:hint="請輸入您的本名"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="105dp" />
 
     <TextView
         android:id="@+id/firstName2"
@@ -101,7 +103,7 @@
 
     <TextView
         android:id="@+id/firstName3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editText3"
         android:layout_alignParentLeft="true"

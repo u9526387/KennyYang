@@ -40,7 +40,7 @@ public class NormalLogin extends AppCompatActivity {
                                 JSONObject jsonResponse = new JSONObject(response);
                                 boolean success = jsonResponse.getBoolean("success");
 
-                                if(success && username!= null && password != null){
+                                if(success ){
                                     Intent intent = new Intent(NormalLogin.this, homepage.class);
                                     NormalLogin.this.startActivity(intent);
                                 }else{

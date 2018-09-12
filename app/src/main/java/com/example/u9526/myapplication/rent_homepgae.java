@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.u9526.myapplication.recommend.main_recommend;
+
 public class rent_homepgae extends AppCompatActivity {
 
     private ImageButton Rent;
@@ -22,7 +24,7 @@ public class rent_homepgae extends AppCompatActivity {
         Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent kk=new Intent(rent_homepgae.this,rent_homepage__search___attribute.class);
+                Intent kk=new Intent(rent_homepgae.this,main_recommend.class);
                 startActivity(kk);
             }
         });
