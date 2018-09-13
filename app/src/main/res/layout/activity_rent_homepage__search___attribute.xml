@@ -12,18 +12,6 @@
     tools:context="com.example.u9526.myapplication.Rent.rent_homepage__search___attribute">
 
 
-        <TextView
-            android:id="@+id/ChooseIdentity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFCDD2"
-            android:gravity="center"
-            android:text="依屬性搜尋"
-            android:textColor="#000000"
-            android:textSize="44sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="0dp" />
 
 
 

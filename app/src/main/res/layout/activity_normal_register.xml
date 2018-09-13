@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".RegisterLogin.NormalRegister">
 
+    <TextView
+        android:id="@+id/firstName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="姓名:"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName3"
+        android:layout_toRightOf="@+id/firstName3"
+        android:ems="10"
+        android:hint="請輸入姓名"
+        android:inputType="textPersonName" />
+
 
     <EditText
         android:id="@+id/passwordcheck"
@@ -24,59 +45,22 @@
         android:id="@+id/FirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/firstName2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/firstName2"
-        android:layout_marginBottom="99dp"
+        android:layout_marginTop="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
         android:text="密碼確認:"
         android:textColor="#000000"
         android:textSize="30dp" />
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="98dp"
-        android:ems="10"
-        android:hint="請輸入姓氏"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/firstName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/firstName7"
-        android:layout_alignStart="@+id/firstName7"
-        android:layout_below="@+id/correct"
-        android:text="密碼:"
-        android:textColor="#000000"
-        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/firstName7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/firstName3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/firstName3"
-        android:layout_marginBottom="162dp"
-        android:text="密碼:"
-        android:textColor="#000000"
-        android:textSize="30dp" />
-
-    <TextView
-        android:id="@+id/firstName10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/correct"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="驗證碼:"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:text="密碼:"
         android:textColor="#000000"
         android:textSize="30dp" />
 
@@ -84,65 +68,18 @@
         android:id="@+id/firstName8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="162dp"
+        android:layout_marginTop="110dp"
         android:text="手機號碼:"
         android:textColor="#000000"
         android:textSize="30dp" />
 
-    <TextView
-        android:id="@+id/firstName3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/etName"
-        android:layout_marginEnd="-56dp"
-        android:layout_marginRight="-56dp"
-        android:layout_toLeftOf="@+id/etName"
-        android:layout_toStartOf="@+id/etName"
-        android:text="姓:"
-        android:textColor="#000000"
-        android:textSize="30dp" />
 
-    <TextView
-        android:id="@+id/lastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/etName"
-        android:layout_toEndOf="@+id/etName"
-        android:layout_toRightOf="@+id/etName"
-        android:text="名:"
-        android:textColor="#000000"
-        android:textSize="30dp" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/etName"
-        android:layout_toEndOf="@+id/lastName"
-        android:layout_toRightOf="@+id/lastName"
-        android:ems="10"
-        android:hint="請輸入名字"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="帳號申請"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="239dp"
+        android:layout_width="253dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -151,36 +88,12 @@
         android:hint="請輸入手機號碼"
         android:inputType="phone" />
 
-    <Button
-        android:id="@+id/Confirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="219dp"
-        android:background="@drawable/lightgreencolorstyle"
-        android:text="進行手機認證"
-        android:textSize="30dp" />
-
-    <EditText
-        android:id="@+id/correct"
-        android:layout_width="268dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="225dp"
-        android:ems="10"
-        android:hint="請輸入收到的驗證碼"
-        android:inputType="textPersonName" />
-
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="match_parent"
+        android:layout_width="299dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/firstName7"
-        android:layout_toEndOf="@+id/firstName2"
-        android:layout_toRightOf="@+id/firstName2"
         android:ems="10"
         android:hint="請輸入密碼"
         android:inputType="textPassword" />

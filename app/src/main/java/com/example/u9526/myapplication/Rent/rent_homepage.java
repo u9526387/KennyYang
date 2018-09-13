@@ -40,25 +40,7 @@ public class rent_homepage extends AppCompatActivity {
 
     }
 
-    public void jumpTorent_collection(View v) {
-        Intent rent_collection = new Intent(this, com.example.u9526.myapplication.Rent.rent_collection.class);
-        startActivity(rent_collection);
-    }
 
 
-    public void jumpTorent_message(View v) {
-        Intent rent_message = new Intent(this, com.example.u9526.myapplication.Rent.rent_message.class);
-        startActivity(rent_message);
-    }
 
-    public void jumpTorent_personalData(View v) {
-        Intent rent_personalData = new Intent(this, com.example.u9526.myapplication.Rent.rent_personalData.class);
-        startActivity(rent_personalData);
-    }
-
-
-    public void jumpTry(View v) {
-        Intent kk = new Intent(this, rent_homepage__search___attribute.class);
-        startActivity(kk);
-    }
 }

@@ -6,23 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".RegisterLogin.ChooseIdentity">
 
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="選擇註冊身份"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/TenantR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/lightbluecolorstyle"
         android:text="房客註冊"
         android:textSize="35dp" />

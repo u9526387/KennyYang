@@ -47,7 +47,7 @@
     <!--___________________________________________________________________________Activity_angel_pair-->
     <color name="colorPrimary_angel_pair">#d4fe485a</color>
     <color name="colorPrimaryDark_angel_pair">#c1313f</color>
-    <color name="colorAccent_angel_pair_check_button">#ebd6ab</color>
+    <color name="colorAccent_angel_pair_check_button">#fbedd1</color>
     <color name="colorAccent_angel_pair_check">#104873</color>
 
     <!--____________________________________________________________________________FloatingActionBar-->
@@ -62,7 +62,7 @@
     <!--_____________________________________________________________________________Fragment_home___-->
     <color name="colorPrimary_space">#3F51B5</color>
     <color name="colorPrimaryDark_space">#273833</color>
-    <color name="black">#000</color>
+    <color name="black">#000000</color>
     <color name="button_true">#fdf2df</color>
     <color name="button_false">#ff6977</color>
     <color name="lightorangedark">#ebd6ab</color>
@@ -172,5 +172,15 @@
         <item>@color/dot_dark_screen3</item>
         <item>@color/dot_dark_screen4</item>
     </array>
+
+
+    <color name="KennyYangTitile">#ffcdd2</color>
+    <color name="accent_material_light">#009688</color>
+    <color name="foreground_material_light">#df2525</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="darkgreen">#018786</color>
+    <color name="holo_light_primary">#607d8b</color>
+    <color name="holo_light_primary_dark">#1d8569</color>
+
 
 </resources>

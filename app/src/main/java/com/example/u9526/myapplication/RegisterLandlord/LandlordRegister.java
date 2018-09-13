@@ -2,8 +2,9 @@ package com.example.u9526.myapplication.RegisterLandlord;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LandlordRegister extends AppCompatActivity implements View.OnClickListener {
+    private ActionBar toolbar;
 
     private EditText etName, etPhone, etPassword;
     private Button Nextstep;
@@ -35,6 +37,8 @@ public class LandlordRegister extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landlord_register);
+        toolbar = getSupportActionBar();//上方tittle bar 工具列
+        toolbar.setTitle("屋主註冊");//第一頁 title 設定為首頁
 
 
         etName = (EditText) findViewById(R.id.LandlordName);
@@ -107,7 +111,7 @@ public class LandlordRegister extends AppCompatActivity implements View.OnClickL
             LandlordRegister();
 
 
-        Intent Next = new Intent(this, Landlord_info.class);
+        Intent Next = new Intent(this, Landlord_register2.class);
         startActivity(Next);
     }
 

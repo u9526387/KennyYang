@@ -3,6 +3,7 @@ package com.example.u9526.myapplication.RegisterTenant;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -31,12 +32,15 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
     private EditText editTextAddress, editTextSchool, editTextDepartent, editTextIDnumber;
     private Button Nextstep;
     private ProgressDialog progressDialog;
+    private ActionBar toolbar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tenant_register2);
+        toolbar = getSupportActionBar();//上方tittle bar 工具列
+        toolbar.setTitle("房客註冊");//第一頁 title 設定為首頁
 
         editTextAddress = (EditText) findViewById(R.id.Address);
         editTextIDnumber = (EditText) findViewById(R.id.IDnumbers);
@@ -52,7 +56,7 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
 
     }
 
-
+    //傳值進PHP
     private void registerUser() {
         final String Address = editTextAddress.getText().toString().trim();
         final String IDnumber = editTextIDnumber.getText().toString().trim();
@@ -109,6 +113,7 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         if (view == Nextstep)
             registerUser();
+        //按完Button 動作
 
 
         Intent Next = new Intent(this, tenant_register3.class);

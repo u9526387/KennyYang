@@ -5,51 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HouseInfo.FillRentInfo1">
-
     <TextView
-        android:id="@+id/FillRentInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFCDD2"
+        android:id="@+id/house_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="選擇房屋類型"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/houseType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="227dp"
-        android:gravity="center"
-        android:text="請選擇住屋類型"
-        android:textColor="#000000"
+        android:text="請填寫房屋標題"
         android:textSize="30dp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="137dp"
-        android:entries="@array/RoomType" />
-
-    <TextView
-        android:id="@+id/firstName15"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:id="@+id/fill_house_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/house_title"
+        android:layout_margin="100dp" />
+
+
+    <TextView
+        android:id="@+id/fill_house_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="請選擇房間類型"
         android:textColor="#000000"
         android:textSize="30dp" />
 
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:entries="@array/HouseType" />
+
+
+    <TextView
+        android:id="@+id/houseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fill_house_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:gravity="center"
+        android:text="請選擇住屋類型"
+        android:textColor="#000000"
+        android:textSize="30dp" />
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/houseType"
-        android:entries="@array/HouseType" />
+        android:layout_below="@+id/fill_house_type"
+        android:entries="@array/RoomType" />
 
     <Button
         android:id="@+id/MoreHouseInfo"

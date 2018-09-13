@@ -2,6 +2,7 @@ package com.example.u9526.myapplication.RegisterLogin;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,10 +18,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class NormalRegister extends AppCompatActivity {
+    private ActionBar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_register);
+        toolbar = getSupportActionBar();//上方tittle bar 工具列
+        toolbar.setTitle("一般註冊");//第一頁 title 設定為首頁
 
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
