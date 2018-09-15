@@ -6,9 +6,19 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewPrice"
+            android:layout_weight="1"
+            android:text="ID"
+            android:layout_alignParentRight="true" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -27,7 +37,7 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textViewShortDesc"
+            android:id="@+id/textViewAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewTitle"
@@ -42,7 +52,7 @@
             android:id="@+id/textViewPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textViewShortDesc"
+            android:layout_above="@+id/textViewAddress"
             android:layout_alignBottom="@+id/imageView"
             android:layout_alignParentBottom="false"
             android:layout_alignParentLeft="false"

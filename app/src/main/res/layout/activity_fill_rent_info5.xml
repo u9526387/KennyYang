@@ -133,13 +133,14 @@
         android:id="@+id/firstName34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/firstName33"
-        android:layout_toStartOf="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="155dp"
         android:text="姓名:"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toLeftOf="@+id/imageView3"
-        tools:ignore="UnknownId" />
+        tools:ignore="UnknownId"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/button3"
@@ -194,11 +195,11 @@
         android:id="@+id/editText22"
         android:layout_width="126dp"
         android:layout_height="36dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/firstName33"
+        android:layout_alignBottom="@+id/firstName33"
+        android:layout_alignEnd="@+id/firstName42"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_alignParentRight="true" />
+        android:layout_alignRight="@+id/firstName42" />
 
     <EditText
         android:id="@+id/editText23"

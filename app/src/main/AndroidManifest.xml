@@ -42,16 +42,14 @@
         <activity android:name=".FillRentInfo4" />
         <activity android:name=".FillRentInfo5" />
         <activity android:name=".TenantRegister3" />
-        <activity android:name=".FillRentInfo2" />
-        <activity android:name=".FillRentInfo3" />
-        <activity android:name=".FillRentInfo4" />
         <activity android:name=".rent_homepage__search___attribute" />
         <activity android:name=".rent_homepage__search" />
         <activity android:name=".rent_homepage__search___region" />
         <activity android:name=".tenant_register3" />
         <activity android:name=".landlord_register3" />
         <activity android:name=".testregion.keysearch" />
-        <activity android:name=".recommend.main_recommend"></activity>
+        <activity android:name=".recommend.main_recommend" />
+        <activity android:name=".recommend.Showhousedetail"></activity>
     </application>
 
 </manifest>

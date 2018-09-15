@@ -25,7 +25,11 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main_recommend extends AppCompatActivity {
+public class main_recommend extends AppCompatActivity implements HouseAdapter.OnItemClickListener{
+public static final String EXTRA_IMAGE = "image";
+    public static final String EXTRA_TITLE = "title";
+    public static final String EXTRA_ADDRESS = "address";
+    public static final String EXTRA_PRICE ="price";
 
     private Button TurnSearch;
     //this is the JSON Data URL
@@ -42,11 +46,10 @@ public class main_recommend extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_recommend);
         //getting the recyclerview from xml
-        TurnSearch =(Button)findViewById(R.id.turnsearch);
         recyclerView = findViewById(R.id.recylcerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        TurnSearch = findViewById(R.id.turnsearch);
         //initializing the productlist
         houseList = new ArrayList<>();
 
@@ -90,8 +93,8 @@ public class main_recommend extends AppCompatActivity {
                                 houseList.add(new house(
                                         product.getInt("id"),
                                         product.getString("title"),
-                                        product.getString("shortdesc"),
-                                        product.getDouble("price"),
+                                        product.getString("address"),
+                                        product.getInt("price"),
                                         product.getString("image")
                                 ));
                             }
@@ -99,6 +102,7 @@ public class main_recommend extends AppCompatActivity {
                             HouseAdapter adapter = new HouseAdapter(main_recommend.this, houseList);
                             recyclerView.setAdapter(adapter);
 
+                            adapter.setOnItemClickListener(main_recommend.this);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -113,5 +117,18 @@ public class main_recommend extends AppCompatActivity {
 
         //adding our stringrequest to queue
         Volley.newRequestQueue(this).add(stringRequest);
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent detailIntent = new Intent(this,Showhousedetail.class);
+        house clickItem = houseList.get(position);
+
+        detailIntent.putExtra(EXTRA_IMAGE, clickItem.getImage());
+        detailIntent.putExtra(EXTRA_TITLE, clickItem.getTitle());
+        detailIntent.putExtra(EXTRA_PRICE,clickItem.getPrice());
+        detailIntent.putExtra(EXTRA_ADDRESS,clickItem.getAddress());
+
+        startActivity(detailIntent);
     }
 }
