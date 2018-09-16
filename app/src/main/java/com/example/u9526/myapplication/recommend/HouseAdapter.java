@@ -59,7 +59,6 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewH
                 .load(product.getImage())
                 .into(holder.imageView);
 
-        holder.textViewID.setText(String.valueOf(product.getId()));
         holder.textViewTitle.setText(product.getTitle());
         holder.textViewAddress.setText(product.getAddress());
         holder.textViewPrice.setText(String.valueOf(product.getPrice()));
@@ -74,12 +73,11 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewH
 
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView textViewTitle, textViewAddress, textViewPrice, textViewID;
+        public TextView textViewTitle, textViewAddress, textViewPrice;
         public ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
-            textViewID = itemView.findViewById(R.id.textViewID);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewAddress = itemView.findViewById(R.id.textViewAddress);
             textViewPrice = itemView.findViewById(R.id.textViewPrice);

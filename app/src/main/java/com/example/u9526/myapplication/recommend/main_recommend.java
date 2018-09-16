@@ -30,6 +30,9 @@ public static final String EXTRA_IMAGE = "image";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_ADDRESS = "address";
     public static final String EXTRA_PRICE ="price";
+    public static final String EXTRA_CAR = "car";
+    public static final String EXTRA_GENDER = "gender";
+    public static final String EXTRA_PET = "pet";
 
     private Button TurnSearch;
     //this is the JSON Data URL
@@ -95,7 +98,10 @@ public static final String EXTRA_IMAGE = "image";
                                         product.getString("title"),
                                         product.getString("address"),
                                         product.getInt("price"),
-                                        product.getString("image")
+                                        product.getString("image"),
+                                        product.getString("car"),
+                                        product.getString("gender"),
+                                        product.getString("pet")
                                 ));
                             }
 //creating adapter object and setting it to recyclerview
@@ -128,6 +134,9 @@ public static final String EXTRA_IMAGE = "image";
         detailIntent.putExtra(EXTRA_TITLE, clickItem.getTitle());
         detailIntent.putExtra(EXTRA_PRICE,clickItem.getPrice());
         detailIntent.putExtra(EXTRA_ADDRESS,clickItem.getAddress());
+        detailIntent.putExtra(EXTRA_CAR,clickItem.getCar());
+        detailIntent.putExtra(EXTRA_GENDER,clickItem.getGender());
+        detailIntent.putExtra(EXTRA_PET,clickItem.getPet());
 
         startActivity(detailIntent);
     }

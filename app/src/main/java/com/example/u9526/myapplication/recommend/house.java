@@ -6,13 +6,19 @@ public class house {
     private String address;
     private int price;
     private String image;
+    private String car;
+    private String gender;
+    private String pet;
 
-    public house(int id, String title, String address, int price, String image) {
+    public house(int id, String title, String address, int price, String image, String car, String gender, String pet) {
         this.id = id;
         this.title = title;
         this.address = address;
         this.price = price;
         this.image = image;
+        this.car = car;
+        this.gender = gender;
+        this.pet = pet;
     }
 
     public int getId() {
@@ -33,6 +39,18 @@ public class house {
 
     public String getImage() {
         return image;
+    }
+
+    public String getCar() {
+        return car;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getPet() {
+        return pet;
     }
 }
 
