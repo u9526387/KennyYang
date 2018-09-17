@@ -131,10 +131,10 @@
         android:id="@+id/inHiking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/inPhoto"
         android:layout_alignBottom="@+id/inPhoto"
-        android:textSize="24dp"
-        android:text="爬山" />
+        android:layout_toRightOf="@+id/inPhoto"
+        android:text="爬山"
+        android:textSize="24dp" />
 
     <CheckBox
         android:id="@+id/inTvgame"
@@ -166,6 +166,38 @@
         android:text="完成註冊"
         android:textSize="30dp"
         android:onClick="jumpToMain"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSmoke"
+        android:layout_toEndOf="@+id/tvSmoke"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/smoke_radio_button_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvSmoke"
+            android:layout_alignEnd="@+id/inChess2"
+            android:buttonTint="@color/color_login_background_start"
+            android:text="有"
+            android:textColor="@color/color_login_background_start"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/smoke_radio_button_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_login_background_start"
+            android:text="沒有"
+            android:textColor="@color/color_login_background_start"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RadioGroup>
 
 
 </RelativeLayout>

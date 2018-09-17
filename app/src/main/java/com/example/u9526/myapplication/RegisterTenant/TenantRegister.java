@@ -2,6 +2,7 @@ package com.example.u9526.myapplication.RegisterTenant;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -28,11 +29,22 @@ import java.util.Map;
 
 public class TenantRegister extends AppCompatActivity implements View.OnClickListener {
 
+    private SharedPreferences user_data;
+    private int pair_lord_status = -1, pair_angel_status = -1, userid;//傳值用
+    private String token;//半段使用者裝置重複用
+    private static final int REQUEST_READ_CONTACTS = 0;
+    private static final String[] DUMMY_CREDENTIALS = new String[]{
+            "foo@example.com:hello", "bar@example.com:world"
+    };
 
+    //弓弦
     private EditText editTextusername, editTextphoneNumber, editTextpassword;
     private Button Jump;
     private ProgressDialog progressDialog;
     private ActionBar toolbar;
+    //弓弦
+
+
 
 
     @Override

@@ -8,7 +8,8 @@ public class Constants {
 
     private static final String ROOT_URL = "http://192.168.64.2/Android/v1/";
 
-    public static final String URL_REGISTER = ROOT_URL + "registerUser.php";
+    public static final String URL_TENANT_REGISTER3 = ROOT_URL + "tenant_register3.php";
+    public static final String URL_TENANT_REGISTER2 = ROOT_URL + "tenant_register2.php";
     public static final String URL_TENANT_REGISTER = ROOT_URL + "tenant_register.php";
     public static final String URL_LandlordRegister = ROOT_URL + "LandlordRegister.php";
 

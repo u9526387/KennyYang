@@ -7,20 +7,12 @@
     tools:context="com.example.u9526.myapplication.RegisterLandlord.Landlord_register2">
 
 
-
-
-
-
-
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/gender"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_toEndOf="@+id/gender"
-        android:layout_toRightOf="@+id/gender"
+        android:layout_above="@+id/tvBrithday"
+        android:layout_toEndOf="@+id/tvdepartent"
         android:visibility="visible" />
 
 
@@ -213,13 +205,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/gender"
+        android:layout_below="@+id/tvGender"
         android:text="生日:"
         android:textColor="#000000"
         android:textSize="28dp" />
 
     <TextView
-        android:id="@+id/gender"
+        android:id="@+id/tvGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

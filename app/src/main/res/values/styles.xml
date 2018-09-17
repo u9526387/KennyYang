@@ -1,13 +1,6 @@
 <resources>
 
 <!-- Base application theme. -->
-    <style name="AppTheme" parent="App.Theme.Kenny">
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/bg_screen2</item>
-        <item name="android:textColorPrimary">@color/textColorPrimary</item>
-        <item name="android:actionMenuTextColor">@color/textColorPrimary</item>
-</style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
