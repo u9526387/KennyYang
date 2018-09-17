@@ -49,36 +49,57 @@ public class tenant_register3 extends AppCompatActivity implements View.OnClickL
         toolbar = getSupportActionBar();//上方tittle bar 工具列
         toolbar.setTitle("房客註冊");//第一頁 title 設定為首頁
 
-        smoke_radio_button_yes = (RadioButton) findViewById(R.id.smoke_radio_button_yes);//宣告有radio buttonon
-        smoke_radio_button_no = (RadioButton) findViewById(R.id.smoke_radio_button_no);//宣告沒有radio button
+
+        //宣告有radio buttonon＆radioGroup
+        smoke_radio_button_yes = (RadioButton) findViewById(R.id.smoke_radio_button_yes);
+        smoke_radio_button_no = (RadioButton) findViewById(R.id.smoke_radio_button_no);
         radioGroup1 = (RadioGroup) findViewById(R.id.radioGroup1);
+        //宣告有radio buttonon＆radioGroup
+
+
+
+
+
         //smoke_value = ((RadioButton)findViewById(radioGroup1.getCheckedRadioButtonId())).getText().toString();//取得RadioButton選取值
+
+
+        //先設值為0，不為空，用PHP至少能讀到0
         smoke_value = "0";
         inChess_value = "0";
+        //先設值為0，不為空，用PHP至少能讀到0
+
+
+
+
 
         inChess = (CheckBox) findViewById(R.id.inChess);
         inChess2 = (CheckBox) findViewById(R.id.inChess2);
         inChess3 = (CheckBox) findViewById(R.id.inChess3);
 
+
+        //觸發Checkbox被選取的事件
         inChess.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-                inChess_value = inChess.getText().toString();
-                inChess.setChecked(false);
+                inChess_value = inChess.getText().toString();//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
 
 
             }
         });
+        //觸發Checkbox被選取的事件
 
 
+        //觸發radioButton事件
         radioGroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                smoke_value = ((RadioButton) findViewById(radioGroup1.getCheckedRadioButtonId())).getText().toString();
+                smoke_value = ((RadioButton) findViewById(radioGroup1.getCheckedRadioButtonId())).getText().toString();//smoke_value得到被選取的RadioButton的Text
                 Toast.makeText(getBaseContext(), smoke_value, Toast.LENGTH_SHORT).show();
             }
         });
+        //觸發radioButton事件
 
 
         Nextstep = (Button) findViewById(R.id.FinishRegister);
@@ -137,6 +158,8 @@ public class tenant_register3 extends AppCompatActivity implements View.OnClickL
         requestQueue.add(stringRequest);
 
     }
+
+    //傳值進PHP
 
     @Override
     public void onClick(View view) {

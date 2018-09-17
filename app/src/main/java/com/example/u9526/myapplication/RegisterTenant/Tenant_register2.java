@@ -172,8 +172,13 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
 
     }
 
+    //傳值進PHP
 
+
+    //以下到210行沒用到，但刪掉會錯，故先放著
     /**
+     *
+     *
      * <p>Callback method to be invoked when an item in this view has been
      * selected. This callback is invoked only when the newly selected
      * position is different from the previously selected position or if
@@ -204,6 +209,8 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
 
 
     }
+
+    //以上程式碼沒用到
 
     @Override
     public void onClick(View view) {
