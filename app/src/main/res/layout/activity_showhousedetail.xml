@@ -18,20 +18,91 @@
             <TextView
                 android:id="@+id/address"
                 android:layout_width="match_parent"
-                android:layout_height="49dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="169dp"
-                android:textSize="30dp"
                 android:gravity="center_vertical"
-                android:text="新北市新莊區中正路510號" />
+                android:text="新北市新莊區中正路"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp">
+                <TextView
+                    android:id="@+id/valley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="12"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/valley2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="巷"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/nong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="12"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/nong2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="弄"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="12"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/number2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="號"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="12"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/floor2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="樓"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
             <TextView
                 android:id="@+id/title"
-                android:layout_width="252dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="220dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
                 android:text="超豪華大套房"
-                android:textSize="25dp"
-                android:gravity="center_vertical"/>
+                android:textSize="26dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
 
 
             <ImageView
@@ -39,23 +110,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="167dp"
                 android:layout_alignParentTop="true"
-                app:srcCompat="@drawable/bighouse" />
+                app:srcCompat="@drawable/bighouse"/>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="260dp">
+                android:layout_marginTop="300dp">
 
                 <TextView
                     android:id="@+id/rentprice"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:gravity="center_horizontal"
                     android:text="租金 :"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/price"
@@ -64,22 +136,24 @@
                     android:layout_centerVertical="true"
                     android:gravity="center_horizontal"
                     android:text="6500"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="300dp">
+                android:layout_marginTop="340dp">
 
                 <TextView
                     android:id="@+id/house"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:gravity="center_horizontal"
                     android:text="房型 :"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/description"
@@ -88,22 +162,24 @@
                     android:gravity="center_horizontal"
                     android:layout_marginBottom="215dp"
                     android:text="套房"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="340dp">
+                android:layout_marginTop="380dp">
 
                 <TextView
                     android:id="@+id/pin"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
                     android:text="房屋坪數 :"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/plain"
@@ -111,22 +187,24 @@
                     android:layout_height="31dp"
                     android:text="10"
                     android:textSize="20dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="380dp">
+                android:layout_marginTop="420dp">
                 <TextView
                     android:id="@+id/carparking"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:text="車位 :"
                     android:gravity="center_horizontal"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/car"
@@ -134,21 +212,23 @@
                     android:layout_height="31dp"
                     android:text="有"
                     android:gravity="center_horizontal"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="420dp">
+                android:layout_marginTop="460dp">
                 <TextView
                     android:id="@+id/gender"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:gravity="center_horizontal"
                     android:text="性別 :"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/boygirl"
@@ -156,21 +236,23 @@
                     android:layout_height="31dp"
                     android:gravity="center_horizontal"
                     android:text="男"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="460dp">
+                android:layout_marginTop="500dp">
                 <TextView
                     android:id="@+id/openfire"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:gravity="center_horizontal"
                     android:layout_marginBottom="224dp"
                     android:text="開伙 :"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/cook"
@@ -178,21 +260,23 @@
                     android:layout_height="31dp"
                     android:text="可"
                     android:textSize="20dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="500dp">
+                android:layout_marginTop="540dp">
                 <TextView
                     android:id="@+id/keeppet"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:text="寵物 :"
                     android:textSize="20dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/pet"
@@ -200,21 +284,23 @@
                     android:layout_height="31dp"
                     android:text="可"
                     android:textSize="20dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="540dp">
+                android:layout_marginTop="580dp">
                 <TextView
                     android:id="@+id/keppername"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:text="屋主姓名 :"
                     android:textSize="18dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/name"
@@ -222,21 +308,23 @@
                     android:layout_height="31dp"
                     android:text="王建銘"
                     android:textSize="20dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="274dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginTop="580dp">
+                android:layout_marginTop="620dp">
                 <TextView
                     android:id="@+id/kepperphone"
-                    android:layout_width="84dp"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
                     android:layout_marginBottom="224dp"
                     android:gravity="center_horizontal"
                     android:text="屋主電話 :"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/phone"
@@ -244,7 +332,104 @@
                     android:layout_height="31dp"
                     android:text="0912345678"
                     android:gravity="center_horizontal"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="660dp">
+                <TextView
+                    android:id="@+id/livingroom"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="224dp"
+                    android:gravity="center_horizontal"
+                    android:text="客廳 :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/livingroomdata"
+                    android:layout_width="189dp"
+                    android:layout_height="31dp"
+                    android:text="12"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="700dp">
+                <TextView
+                    android:id="@+id/room"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="224dp"
+                    android:gravity="center_horizontal"
+                    android:text="房間 :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/roomdata"
+                    android:layout_width="189dp"
+                    android:layout_height="31dp"
+                    android:text="12"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="740dp">
+                <TextView
+                    android:id="@+id/toilet"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="224dp"
+                    android:gravity="center_horizontal"
+                    android:text="廁所 :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/toiletdata"
+                    android:layout_width="189dp"
+                    android:layout_height="31dp"
+                    android:text="12"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="780dp">
+                <TextView
+                    android:id="@+id/balcony"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="224dp"
+                    android:gravity="center_horizontal"
+                    android:text="陽台 :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/balconydata"
+                    android:layout_width="189dp"
+                    android:layout_height="31dp"
+                    android:text="12"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </RelativeLayout>

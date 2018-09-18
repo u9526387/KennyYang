@@ -25,14 +25,23 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main_recommend extends AppCompatActivity implements HouseAdapter.OnItemClickListener{
-public static final String EXTRA_IMAGE = "image";
+public class main_recommend extends AppCompatActivity implements HouseAdapter.OnItemClickListener {
+    public static final String EXTRA_IMAGE = "image";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_ADDRESS = "address";
-    public static final String EXTRA_PRICE ="price";
+    public static final String EXTRA_PRICE = "price";
     public static final String EXTRA_CAR = "car";
     public static final String EXTRA_GENDER = "gender";
     public static final String EXTRA_PET = "pet";
+    public static final String EXTRA_VALLEY = "valley";
+    public static final String EXTRA_NONG = "nong";
+    public static final String EXTRA_HOUSENUMBER = "housenumber";
+    public static final String EXTRA_FLOOR = "floor";
+    public static final String EXTRA_LIVINGROOM = "livingroom";
+    public static final String EXTRA_ROOM = "room";
+    public static final String EXTRA_TOILET = "toilet";
+    public static final String EXTRA_BALCONY = "balcony";
+    public static final String EXTRA_PING = "ping";
 
     private Button TurnSearch;
     //this is the JSON Data URL
@@ -44,6 +53,7 @@ public static final String EXTRA_IMAGE = "image";
 
     //the recyclerview
     RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +69,7 @@ public static final String EXTRA_IMAGE = "image";
         TurnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent kk=new Intent(main_recommend.this,rent_homepage__search.class);
+                Intent kk = new Intent(main_recommend.this, rent_homepage__search.class);
                 startActivity(kk);
             }
         });
@@ -101,7 +111,16 @@ public static final String EXTRA_IMAGE = "image";
                                         product.getString("image"),
                                         product.getString("car"),
                                         product.getString("gender"),
-                                        product.getString("pet")
+                                        product.getString("pet"),
+                                        product.getString("valley"),
+                                        product.getString("nong"),
+                                        product.getString("housenumber"),
+                                        product.getString("floor"),
+                                        product.getString("livingroom"),
+                                        product.getString("room"),
+                                        product.getString("toilet"),
+                                        product.getString("balcony"),
+                                        product.getString("ping")
                                 ));
                             }
 //creating adapter object and setting it to recyclerview
@@ -127,16 +146,26 @@ public static final String EXTRA_IMAGE = "image";
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this,Showhousedetail.class);
+        Intent detailIntent = new Intent(this, Showhousedetail.class);
         house clickItem = houseList.get(position);
 
         detailIntent.putExtra(EXTRA_IMAGE, clickItem.getImage());
         detailIntent.putExtra(EXTRA_TITLE, clickItem.getTitle());
-        detailIntent.putExtra(EXTRA_PRICE,clickItem.getPrice());
-        detailIntent.putExtra(EXTRA_ADDRESS,clickItem.getAddress());
-        detailIntent.putExtra(EXTRA_CAR,clickItem.getCar());
-        detailIntent.putExtra(EXTRA_GENDER,clickItem.getGender());
-        detailIntent.putExtra(EXTRA_PET,clickItem.getPet());
+        detailIntent.putExtra(EXTRA_PRICE, clickItem.getPrice());
+        detailIntent.putExtra(EXTRA_ADDRESS, clickItem.getAddress());
+        detailIntent.putExtra(EXTRA_CAR, clickItem.getCar());
+        detailIntent.putExtra(EXTRA_GENDER, clickItem.getGender());
+        detailIntent.putExtra(EXTRA_PET, clickItem.getPet());
+        detailIntent.putExtra(EXTRA_VALLEY, clickItem.getValley());
+        detailIntent.putExtra(EXTRA_NONG, clickItem.getNong());
+        detailIntent.putExtra(EXTRA_HOUSENUMBER, clickItem.getHousenumber());
+        detailIntent.putExtra(EXTRA_FLOOR, clickItem.getFloor());
+        detailIntent.putExtra(EXTRA_LIVINGROOM, clickItem.getLivingroom());
+        detailIntent.putExtra(EXTRA_ROOM, clickItem.getRoom());
+        detailIntent.putExtra(EXTRA_TOILET, clickItem.getToilet());
+        detailIntent.putExtra(EXTRA_BALCONY, clickItem.getBalcony());
+        detailIntent.putExtra(EXTRA_PING, clickItem.getPing());
+
 
         startActivity(detailIntent);
     }

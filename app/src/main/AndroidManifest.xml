@@ -3,6 +3,7 @@
     package="com.example.u9526.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -25,11 +26,11 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity android:name=".ChooseIdentity" />
-        <activity android:name=".NormalLogin" />
+        <activity android:name=".login_register.NormalLogin" />
         <activity android:name=".Tenant_register2" />
         <activity android:name=".TenantRegister" />
         <activity android:name=".LandlordRegister" />
-        <activity android:name=".NormalRegister" />
+        <activity android:name=".login_register.NormalRegister" />
         <activity android:name=".homepage" />
         <activity android:name=".Landlord_info" />
         <activity android:name=".rent_homepgae" />

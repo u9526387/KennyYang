@@ -1,4 +1,4 @@
-package com.example.u9526.myapplication;
+package com.example.u9526.myapplication.login_register;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginRequest extends StringRequest{
-    private static final String LOGIN_REQUEST_URL ="https://zaq2344321.000webhostapp.com/Login2.php";
+    private static final String LOGIN_REQUEST_URL ="http://140.136.155.135/testphp/Login2.php";
     private Map<String , String> params;
 
     public LoginRequest(String username, String password, Response.Listener<String>listener){

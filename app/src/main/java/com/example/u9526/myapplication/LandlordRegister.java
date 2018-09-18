@@ -17,4 +17,5 @@ public class LandlordRegister extends AppCompatActivity {
         Intent landlord_info=new Intent(this,Landlord_info.class);
         startActivity(landlord_info);
     }
+
     }

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.u9526.myapplication.login_register.NormalRegister;
+
 public class ChooseIdentity extends AppCompatActivity {
 
     private Button TenantR;
