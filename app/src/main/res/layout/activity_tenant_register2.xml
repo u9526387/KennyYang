@@ -238,17 +238,16 @@
         android:visibility="visible" />
 
     <Button
-        android:id="@+id/FinishRegister"
+        android:id="@+id/Finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="下一步"
-        android:textSize="30dp"
-        android:onClick="jumpTotenant_info2"/>
+        android:textSize="30dp" />
 
 
 </RelativeLayout>

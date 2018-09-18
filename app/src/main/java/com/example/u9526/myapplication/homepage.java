@@ -28,7 +28,7 @@ public class homepage extends AppCompatActivity {
 
     }
     public void jumpTorent_homepage(View v){
-        Intent jumptorent_homepage=new Intent(this,rent_homepgae.class);
+        Intent jumptorent_homepage = new Intent(this, rent_homepage.class);
         startActivity(jumptorent_homepage);
 
     }

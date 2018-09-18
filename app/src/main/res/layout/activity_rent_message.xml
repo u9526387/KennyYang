@@ -72,4 +72,13 @@
         android:textSize="16dp"
         android:onClick="jumpTorent_personalData"/>
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/collection"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:text="TextView" />
+
 </RelativeLayout>

@@ -33,7 +33,7 @@
         <activity android:name=".login_register.NormalRegister" />
         <activity android:name=".homepage" />
         <activity android:name=".Landlord_info" />
-        <activity android:name=".rent_homepgae" />
+        <activity android:name=".rent_homepage" />
         <activity android:name=".rent_collection" />
         <activity android:name=".rent_message" />
         <activity android:name=".rent_personalData" />

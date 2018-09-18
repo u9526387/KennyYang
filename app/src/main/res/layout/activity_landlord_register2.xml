@@ -215,6 +215,7 @@
         android:layout_alignBottom="@+id/tvBrithday"
         android:layout_toEndOf="@+id/tvBrithday"
         android:layout_toRightOf="@+id/tvBrithday"
+        android:spinnerMode="dialog"
         android:textColor="#000000"
         android:textSize="30dp"
         android:visibility="visible" />

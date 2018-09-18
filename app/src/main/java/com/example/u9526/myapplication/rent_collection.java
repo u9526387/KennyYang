@@ -13,7 +13,7 @@ public class rent_collection extends AppCompatActivity {
         setContentView(R.layout.activity_rent_collection);
     }
     public void jumpTorent_homepage(View v){
-        Intent rent_homepage=new Intent(this,rent_homepgae.class);
+        Intent rent_homepage = new Intent(this, rent_homepage.class);
         startActivity(rent_homepage);
     }
 

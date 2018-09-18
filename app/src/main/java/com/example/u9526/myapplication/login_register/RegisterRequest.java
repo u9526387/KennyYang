@@ -1,6 +1,7 @@
-package com.example.u9526.myapplication.login_register;
+package com.example.u9526.myapplication;
 
 //註冊程式碼
+
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
