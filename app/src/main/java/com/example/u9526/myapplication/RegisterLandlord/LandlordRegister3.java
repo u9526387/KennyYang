@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.u9526.myapplication.MainActivity;
 import com.example.u9526.myapplication.R;
 
-public class landlord_register3 extends AppCompatActivity {
+public class LandlordRegister3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

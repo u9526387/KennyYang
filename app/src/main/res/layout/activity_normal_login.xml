@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterLogin.NormalLogin">
+    tools:context=".RegisterLogin.Login">
 
     <TextView
         android:id="@+id/ChooseIdentity"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="#FFCDD2"
         android:gravity="center"
-        android:text="一般登入"
+        android:text="登入頁面"
         android:textColor="#000000"
         android:textSize="48dp"
         app:layout_constraintEnd_toEndOf="parent"

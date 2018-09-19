@@ -38,12 +38,12 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tenant_register);
 
-        editTextusername = (EditText) findViewById(R.id.username);
+        editTextusername = (EditText) findViewById(R.id.etName);
         editTextphoneNumber = (EditText) findViewById(R.id.phoneNumber);
-        editTextpassword = (EditText) findViewById(R.id.password);
+        editTextpassword = (EditText) findViewById(R.id.etPassword);
 
 
-        Jump = (Button) findViewById(R.id.jumpTotr2);
+        Jump = (Button) findViewById(R.id.NextStep1);
 
         progressDialog = new ProgressDialog(this);
 
@@ -111,7 +111,7 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
             tenantRegister();
 
 
-        Intent Next = new Intent(this, Tenant_register2.class);
+        Intent Next = new Intent(this, TenantRegister2.class);
         startActivity(Next);
     }
 

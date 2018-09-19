@@ -3,6 +3,7 @@
     package="com.example.u9526.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,13 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterLogin.ChooseIdentity" />
-        <activity android:name=".RegisterLogin.NormalLogin" />
-        <activity android:name=".RegisterTenant.Tenant_register2" />
+        <activity android:name=".RegisterLogin.Login" />
+        <activity android:name=".RegisterTenant.TenantRegister2" />
         <activity android:name=".RegisterTenant.TenantRegister" />
         <activity android:name=".RegisterLandlord.LandlordRegister" />
         <activity android:name=".RegisterLogin.NormalRegister" />
         <activity android:name=".homepage" />
-        <activity android:name=".RegisterLandlord.Landlord_info" />
+        <activity android:name=".RegisterLandlord.LandlordRegister2" />
         <activity android:name=".Rent.rent_homepage" />
         <activity android:name=".Rent.rent_collection" />
         <activity android:name=".Rent.rent_message" />
@@ -34,13 +35,13 @@
         <activity android:name=".HouseInfo.FillRentInfo2" />
         <activity android:name=".HouseInfo.FillRentInfo3" />
         <activity android:name=".HouseInfo.FillRentInfo4" />
+        <activity android:name=".HouseInfo.FillRentInfo5" />
         <activity android:name=".Rent.rent_homepage__search___attribute" />
         <activity android:name=".Rent.rent_homepage__search" />
         <activity android:name=".Rent.rent_homepage__search___landmark" />
         <activity android:name=".Rent.rent_homepage__search___region" />
-        <activity android:name=".RegisterTenant.tenant_register3" />
-        <activity android:name=".RegisterLandlord.landlord_register3" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".RegisterTenant.TenantRegister3" />
+        <activity android:name=".RegisterLandlord.LandlordRegister3" />
     </application>
 
 </manifest>

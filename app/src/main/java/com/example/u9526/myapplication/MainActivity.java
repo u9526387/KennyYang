@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.u9526.myapplication.RegisterLogin.ChooseIdentity;
-import com.example.u9526.myapplication.RegisterLogin.NormalLogin;
+import com.example.u9526.myapplication.RegisterLogin.Login;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void jumpTologin(View v) {
-        Intent l = new Intent(this, NormalLogin.class);
+        Intent l = new Intent(this, Login.class);
         startActivity(l);
 
 

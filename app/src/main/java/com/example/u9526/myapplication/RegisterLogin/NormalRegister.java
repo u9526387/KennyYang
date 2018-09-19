@@ -23,21 +23,21 @@ public class NormalRegister extends AppCompatActivity {
         setContentView(R.layout.activity_normal_register);
 
         final EditText etName = (EditText) findViewById(R.id.etName);
-        final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final EditText etTextPhone = (EditText) findViewById(R.id.etTextPhone);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
-        final EditText passworcheck = (EditText) findViewById(R.id.passwordcheck);
-        final Button FinishRegister = (Button) findViewById(R.id.FinishRegister);
+        final EditText passworcheck = (EditText) findViewById(R.id.checkpassword);
+        final Button Confirm = (Button) findViewById(R.id.Confirm);
 
-        FinishRegister.setOnClickListener(new View.OnClickListener() {
+        Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String name = etName.getText().toString();
-                final String username = etUsername.getText().toString();
+                final String username = etTextPhone.getText().toString();
                 final String password = etPassword.getText().toString();
-                final String passwordcheck = passworcheck.getText().toString();
+                final String passwordck = passworcheck.getText().toString();
 
 
-                Response.Listener<String> responseListener = new Response.Listener<String>(){
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                     @Override
                     public void onResponse(String response) {
@@ -46,12 +46,12 @@ public class NormalRegister extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {//PROBLEM
-                                Intent intent = new Intent(NormalRegister.this,NormalLogin.class);
+                                Intent intent = new Intent(NormalRegister.this, Login.class);
                                 NormalRegister.this.startActivity(intent);
                             }else{
-                                AlertDialog.Builder builder  = new AlertDialog.Builder(NormalRegister.this);
-                                builder.setMessage("Register Fail")
-                                        .setNegativeButton("Retry" ,null)
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalRegister.this);
+                                builder.setMessage("")
+                                        .setNegativeButton("Retry", null)
                                         .create()
                                         .show();
                             }
@@ -68,6 +68,6 @@ public class NormalRegister extends AppCompatActivity {
 
             }
         });
-
     }
+
 }

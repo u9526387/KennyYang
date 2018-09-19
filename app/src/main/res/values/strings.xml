@@ -9,6 +9,11 @@
         <item>雙性別</item>
     </string-array>
 
+    <string-array name="gender">
+        <item>限男</item>
+        <item>限女</item>
+        <item>不限</item>
+    </string-array>
 
     <string-array name="spn_religion">
         <item>無</item>
@@ -76,6 +81,13 @@
         <item>28</item>
         <item>29</item>
         <item>30</item>
+    </string-array>
+
+    <string-array name="rent_time">
+        <item>半年</item>
+        <item>一年</item>
+        <item>兩年</item>
+        <item>其他</item>
     </string-array>
 
     <string-array name="RoomType">

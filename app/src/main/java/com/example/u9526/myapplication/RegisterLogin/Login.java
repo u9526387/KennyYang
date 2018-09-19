@@ -17,7 +17,7 @@ import com.example.u9526.myapplication.homepage;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class NormalLogin extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
 
     @Override
@@ -42,11 +42,11 @@ public class NormalLogin extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
-                            if (success && username != null && password != null) {
-                                Intent intent = new Intent(NormalLogin.this, homepage.class);
-                                NormalLogin.this.startActivity(intent);
+                            if (success) {
+                                Intent intent = new Intent(Login.this, homepage.class);
+                                Login.this.startActivity(intent);
                             } else {
-                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalLogin.this);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
                                 builder.setMessage("Login Fail")
                                         .setNegativeButton("Retry", null)
                                         .create()
@@ -58,7 +58,7 @@ public class NormalLogin extends AppCompatActivity {
                     }
                 };
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(NormalLogin.this);
+                RequestQueue queue = Volley.newRequestQueue(Login.this);
                 queue.add(loginRequest);
             }
         });

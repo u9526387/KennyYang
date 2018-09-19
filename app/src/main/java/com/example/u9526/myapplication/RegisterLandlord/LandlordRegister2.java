@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.u9526.myapplication.R;
 
-public class Landlord_info extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class LandlordRegister2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,7 @@ public class Landlord_info extends AppCompatActivity implements AdapterView.OnIt
     }
 
     public void jumpTolandlord_register3(View v) {
-        Intent lttt = new Intent(this, landlord_register3.class);
+        Intent lttt = new Intent(this, LandlordRegister3.class);
         startActivity(lttt);
     }
 }

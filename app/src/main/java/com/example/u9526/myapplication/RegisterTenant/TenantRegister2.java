@@ -25,7 +25,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Tenant_register2 extends AppCompatActivity implements View.OnClickListener {
+public class TenantRegister2 extends AppCompatActivity implements View.OnClickListener {
 
 
     private EditText editTextAddress, editTextSchool, editTextDepartent, editTextIDnumber;
@@ -111,7 +111,7 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
             registerUser();
 
 
-        Intent Next = new Intent(this, tenant_register3.class);
+        Intent Next = new Intent(this, TenantRegister3.class);
         startActivity(Next);
     }
 

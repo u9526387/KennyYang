@@ -107,7 +107,7 @@ public class LandlordRegister extends AppCompatActivity implements View.OnClickL
             LandlordRegister();
 
 
-        Intent Next = new Intent(this, Landlord_info.class);
+        Intent Next = new Intent(this, LandlordRegister2.class);
         startActivity(Next);
     }
 

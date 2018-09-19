@@ -106,7 +106,8 @@
         android:layout_alignTop="@+id/LandlordName"
         android:text="姓名:"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:layout_alignParentLeft="true" />
 
 
     <TextView
@@ -130,7 +131,8 @@
         android:layout_alignTop="@+id/firstName8"
         android:ems="10"
         android:hint="請輸入手機號碼"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:layout_alignParentRight="true" />
 
     <Button
         android:id="@+id/Confirm"

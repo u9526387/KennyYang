@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TenantRegister">
+    tools:context=".RegisterTenant.Tenant_register">
 
 
     <EditText
@@ -139,15 +139,15 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/phoneNumber"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/firstName8"
         android:ems="10"
         android:hint="請輸入手機號碼"
-        android:inputType="phone"
-        android:layout_alignParentRight="true" />
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/Confirm"
@@ -184,7 +184,7 @@
         android:layout_toRightOf="@+id/firstName2" />
 
     <Button
-        android:id="@+id/FinishRegister"
+        android:id="@+id/NextStep1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -192,8 +192,8 @@
         android:layout_marginBottom="23dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
+        android:onClick="jumpTotenant_info"
         android:text="下一步"
-        android:textSize="30dp"
-        android:onClick="jumpTotenant_info"/>
+        android:textSize="30dp" />
 
 </RelativeLayout>
