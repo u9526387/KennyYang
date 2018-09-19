@@ -4,64 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillRentInfo1">
-
+    tools:context=".HouseInfo.FillRentInfo1">
     <TextView
-        android:id="@+id/FillRentInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="選擇房屋類型"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/firstName11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/house_title"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="227dp"
-        android:text="請選擇住屋類型"
-        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="請填寫房屋標題"
         android:textSize="30dp" />
 
-    <Spinner
-        android:id="@+id/spinner"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/fill_house_title"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="135dp"
-        android:entries="@array/RoomType" />
+        android:layout_below="@+id/house_title"
+        android:layout_margin="100dp" />
+
 
     <TextView
-        android:id="@+id/firstName15"
-        android:layout_width="wrap_content"
+        android:id="@+id/fill_house_type"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="82dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
         android:text="請選擇房間類型"
         android:textColor="#000000"
         android:textSize="30dp" />
 
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:entries="@array/HouseType" />
+
+
+    <TextView
+        android:id="@+id/houseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fill_house_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:gravity="center"
+        android:text="請選擇住屋類型"
+        android:textColor="#000000"
+        android:textSize="30dp" />
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="234dp"
-        android:entries="@array/HouseType" />
+        android:layout_below="@+id/fill_house_type"
+        android:entries="@array/RoomType" />
 
     <Button
         android:id="@+id/MoreHouseInfo"
@@ -69,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="91dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="繼續填寫"

@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.u9526.myapplication">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +14,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity">
+        android:theme="@style/App.Theme.Kenny">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/App.Theme.Kenny">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
@@ -22,35 +26,35 @@
             </intent-filter>
 
             <meta-data
-                android:name="androd.app.searchable"
+                android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
-        <activity android:name=".ChooseIdentity" />
+        <activity android:name=".login_register.ChooseIdentity" />
         <activity android:name=".login_register.NormalLogin" />
-        <activity android:name=".Tenant_register2" />
-        <activity android:name=".TenantRegister" />
-        <activity android:name=".LandlordRegister" />
+        <activity android:name=".RegisterTenant.Tenant_register2" />
+        <activity android:name=".RegisterTenant.TenantRegister" />
+        <activity android:name=".RegisterLandlord.LandlordRegister" />
         <activity android:name=".login_register.NormalRegister" />
         <activity android:name=".homepage" />
-        <activity android:name=".Landlord_info" />
-        <activity android:name=".rent_homepage" />
-        <activity android:name=".rent_collection" />
-        <activity android:name=".rent_message" />
-        <activity android:name=".rent_personalData" />
-        <activity android:name=".FillRentInfo1" />
-        <activity android:name=".FillRentInfo2" />
-        <activity android:name=".FillRentInfo3" />
-        <activity android:name=".FillRentInfo4" />
-        <activity android:name=".FillRentInfo5" />
-        <activity android:name=".TenantRegister3" />
-        <activity android:name=".rent_homepage__search___attribute" />
-        <activity android:name=".rent_homepage__search" />
-        <activity android:name=".rent_homepage__search___region" />
-        <activity android:name=".tenant_register3" />
-        <activity android:name=".landlord_register3" />
-        <activity android:name=".testregion.keysearch" />
-        <activity android:name=".recommend.main_recommend" />
-        <activity android:name=".recommend.Showhousedetail"></activity>
+        <activity android:name=".RegisterLandlord.Landlord_register2" />
+        <activity android:name=".Rent.rent_personalData" />
+        <activity android:name=".HouseInfo.FillRentInfo1" />
+        <activity android:name=".HouseInfo.FillRentInfo2" />
+        <activity android:name=".HouseInfo.FillRentInfo3" />
+        <activity android:name=".HouseInfo.FillRentInfo4" />
+        <activity android:name=".Rent.rent_homepage__search___attribute" />
+        <activity android:name=".Rent.rent_homepage__search" />
+        <activity android:name=".Rent.rent_homepage__search___landmark" />
+        <activity android:name=".Rent.rent_homepage__search___region" />
+        <activity android:name=".RegisterTenant.tenant_register3" />
+        <activity android:name=".RegisterLandlord.landlord_register3" />
+        <activity android:name=".Profile_class1_edit" />
+        <activity android:name=".recommend.main_recommend"/>
+        <activity android:name=".recommend.Showhousedetail"/>
+        <activity
+            android:name=".bottom_navigation"
+            android:label="@string/title_activity_bottom_navigation" />
+
     </application>
 
 </manifest>

@@ -4,89 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.rent_homepage__search">
+    tools:context="com.example.u9526.myapplication.Rent.rent_homepage__search">
 
-
-    <TextView
-        android:id="@+id/RentSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="租屋搜尋"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <ImageButton
-        android:id="@+id/pin"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/attribute"
-        android:layout_alignStart="@+id/attribute"
-        android:layout_below="@+id/RentSearch"
-        android:layout_marginTop="13dp"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="fitXY"
-        app:srcCompat="@mipmap/pin" />
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pin"
-        android:layout_alignStart="@+id/pin"
-        android:layout_below="@+id/pin"
-        android:text="地標設定"
-        android:textColor="#000000"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/region"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="246dp"
-        android:text="地區選擇"
-        android:layout_alignParentLeft="true" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
-        android:text="依現在位置搜尋" />
-
-    <ImageButton
-        android:id="@+id/attribute"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/region"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="fitXY"
-        app:srcCompat="@mipmap/sort" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/attribute"
-        android:layout_alignStart="@+id/attribute"
-        android:layout_below="@+id/attribute"
-        android:text="屬性設定"
-        android:textColor="#000000"
-        android:textSize="20dp" />
 
     <Button
         android:id="@+id/search"
@@ -99,17 +18,72 @@
         android:text="搜尋"
         android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/normalsearch"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginStart="35dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/pin" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="127dp"
+        android:layout_height="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_marginTop="63dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/sort" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginEnd="35dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/search" />
+
+    <TextView
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="93dp"
-        android:layout_marginEnd="31dp"
-        android:text="Button"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="31dp" />
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_below="@+id/imageButton3"
+        android:text="現在位置搜尋" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_below="@+id/imageButton3"
+        android:gravity="center"
+        android:text="地標設定" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton2"
+        android:text="屬性設定" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="148dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@mipmap/pencil" />
 
 
 </RelativeLayout>

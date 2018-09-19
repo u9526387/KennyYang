@@ -2,6 +2,7 @@ package com.example.u9526.myapplication.login_register;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,18 +13,21 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.example.u9526.myapplication.R;
+import com.example.u9526.myapplication.bottom_navigation;
 import com.example.u9526.myapplication.homepage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class NormalLogin extends AppCompatActivity {
-
+     private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_login);
+        toolbar = getSupportActionBar();
+        toolbar.setTitle("登入");
 
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
@@ -42,8 +46,9 @@ public class NormalLogin extends AppCompatActivity {
                                 boolean success = jsonResponse.getBoolean("success");
 
                                 if(success){
-                                    Intent intent = new Intent(NormalLogin.this, homepage.class);
+                                    Intent intent = new Intent(NormalLogin.this, bottom_navigation.class);
                                     NormalLogin.this.startActivity(intent);
+
                                 }else{
                                     AlertDialog.Builder builder  = new AlertDialog.Builder(NormalLogin.this);
                                     builder.setMessage("Login Fail")

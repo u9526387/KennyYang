@@ -2,6 +2,7 @@ package com.example.u9526.myapplication.login_register;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -13,6 +14,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.example.u9526.myapplication.R;
+import com.example.u9526.myapplication.RegisterRequest;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -21,12 +23,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class NormalRegister extends AppCompatActivity {
-
+      private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_register);
+        toolbar = getSupportActionBar();
+        toolbar.setTitle("一般註冊");
 
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etTextPhone = (EditText) findViewById(R.id.etTextPhone);
@@ -79,7 +83,4 @@ public class NormalRegister extends AppCompatActivity {
             }
         });
     }
-
-
-
 }

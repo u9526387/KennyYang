@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tenant_register2">
+    tools:context=".RegisterTenant.Tenant_register2">
 
 
     <TextView
@@ -154,18 +154,6 @@
         android:hint="請輸入身分證字號"
         android:inputType="textVisiblePassword" />
 
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="房客註冊"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
     <Spinner
         android:id="@+id/spinnerDay"
@@ -213,23 +201,20 @@
         android:textSize="28dp" />
 
     <TextView
-    android:id="@+id/gender"
-    android:paddingTop="5dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:layout_marginTop="75dp"
-    android:text="性別:"
-    android:textColor="#000000"
-    android:textSize="28dp"
-    android:layout_alignParentLeft="true" />
-
-
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:paddingTop="5dp"
+        android:text="性別:"
+        android:textColor="#000000"
+        android:textSize="28dp" />
 
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/tvBrithday"
@@ -248,6 +233,54 @@
         android:gravity="center"
         android:text="下一步"
         android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/cbChinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_toEndOf="@+id/tvdepartent"
+        android:text="中文" />
+
+    <CheckBox
+        android:id="@+id/cbEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_centerHorizontal="true"
+        android:text="英文" />
+
+    <CheckBox
+        android:id="@+id/cbTaiwnese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_alignEnd="@+id/Finish"
+        android:text="台語" />
+
+    <CheckBox
+        android:id="@+id/cbBike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_toEndOf="@+id/tvTransportation"
+        android:text="自行車" />
+
+    <CheckBox
+        android:id="@+id/cbScooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_toEndOf="@+id/cbBike"
+        android:text="機車" />
+
+    <CheckBox
+        android:id="@+id/cbCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_alignEnd="@+id/School"
+        android:text="汽車" />
 
 
 </RelativeLayout>

@@ -16,7 +16,7 @@
         <item>佛教</item>
         <item>基督教</item>
         <item>天主教</item>
-        <item>伊斯蘭教</item>
+        <item>伊斯蘭教</item>zzz
     </string-array>
 
     <string-array name="CanOrCant">
@@ -710,4 +710,10 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_bottom_navigation">bottom_navigation</string>
+    <string name="title_home">租屋首頁</string>
+    <string name="title_collection">我的收藏</string>
+    <string name="title_message">互動訊息</string>
+    <string name="title_personaldata">個人資訊</string>
+    <string name="title_homepage">吾居吾束</string>
 </resources>

@@ -4,23 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.tenant_register3">
-
-
-
-
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="屋主註冊"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+    tools:context="com.example.u9526.myapplication.RegisterTenant.tenant_register3">
 
 
     <TextView
@@ -178,8 +162,7 @@
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="完成註冊"
-        android:textSize="30dp"
-        android:onClick="jumpToMain"/>
+        android:textSize="30dp" />
 
 
 </RelativeLayout>

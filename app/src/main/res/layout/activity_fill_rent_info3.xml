@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillRentInfo3">
+    tools:context=".HouseInfo.FillRentInfo3">
 
 
     <TextView
@@ -13,11 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="123dp"
+        android:layout_marginBottom="96dp"
         android:text="*可遷入日:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/firstName27"
@@ -25,11 +24,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="171dp"
+        android:layout_marginBottom="138dp"
         android:text="*最短租期:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <CheckBox
         android:id="@+id/checkBox20"
@@ -56,12 +54,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="254dp"
+        android:layout_below="@+id/firstName23"
         android:text="*租金包含:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/firstName23"
@@ -69,11 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="207dp"
+        android:layout_marginTop="191dp"
         android:text="*租金:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <Spinner
         android:id="@+id/spinner7"
@@ -134,11 +129,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="159dp"
+        android:layout_marginTop="136dp"
         android:text="車位:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <CheckBox
         android:id="@+id/checkBox13"
@@ -152,18 +146,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="19dp" />
 
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="房屋資料"
-        android:textColor="#000000"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/firstName16"
@@ -171,11 +153,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="41dp"
         android:text="*提供家具:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <CheckBox
         android:id="@+id/checkBox9"
@@ -310,7 +291,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="26dp"
         android:background="@drawable/lightgreencolorstyle"
         android:gravity="center"
         android:text="繼續填寫"

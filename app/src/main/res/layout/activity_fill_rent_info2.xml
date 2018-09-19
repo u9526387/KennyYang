@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillRentInfo2">
+    tools:context=".HouseInfo.FillRentInfo2">
 
     <CheckBox
         android:id="@+id/checkBox7"
@@ -30,22 +30,23 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_alignStart="@+id/editText6"
         android:layout_below="@+id/firstName20"
         android:layout_marginTop="-145dp"
         android:text="冰箱"
         android:textSize="18dp"
-        />
+        android:layout_alignLeft="@+id/editText6" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox7"
-        android:layout_toEndOf="@+id/checkBox7"
+        android:layout_alignStart="@+id/spinner5"
+        android:layout_below="@+id/firstName20"
+        android:layout_marginTop="-145dp"
         android:text="冷氣"
         android:textSize="18dp"
-        android:layout_toRightOf="@+id/checkBox7" />
+        android:layout_alignLeft="@+id/spinner5" />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -61,24 +62,22 @@
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/checkBox7"
-        android:layout_marginStart="102dp"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_below="@+id/checkBox"
         android:text="網路"
         android:textSize="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="102dp" />
+        android:layout_alignLeft="@+id/editText6" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox7"
-        android:layout_toStartOf="@+id/checkBox7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstName20"
+        android:layout_marginTop="-145dp"
         android:text="洗衣機"
         android:textSize="18dp"
-        android:layout_toLeftOf="@+id/checkBox7" />
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/firstName20"
@@ -94,18 +93,16 @@
         android:textSize="25dp"
         android:layout_alignParentLeft="true" />
 
-
     <EditText
-
-        android:id="@+id/editTextPing"
+        android:id="@+id/editText21"
         android:layout_width="53dp"
-
         android:layout_height="wrap_content"
+
         android:layout_alignBottom="@+id/firstName19"
         android:layout_toEndOf="@+id/firstName19"
-        android:layout_toRightOf="@+id/firstName19"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/firstName19" />
 
     <TextView
         android:id="@+id/firstName19"
@@ -115,42 +112,34 @@
 
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="190dp"
         android:text="房屋坪數:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <EditText
-        android:id="@+id/editTextLivingRoom"
+        android:id="@+id/editText18"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
-
-        android:layout_centerVertical="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/editTextRoom"
-        android:layout_width="53dp"
-        android:layout_height="wrap_content"
-
-        android:layout_alignStart="@+id/checkBox5"
+        android:layout_alignStart="@+id/editText6"
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
         tools:ignore="RtlCompat" />
 
-    <TextView
-                android:id="@+id/ChooseIdentity"
-                android:layout_width="384dp"
-                android:layout_height="wrap_content"
-                android:background="#FFCDD2"
-                android:gravity="center"
-                android:text="房屋資料"
-                android:textColor="#000000"
-                android:textSize="48dp" />
 
     <TextView
         android:id="@+id/firstName16"
@@ -160,11 +149,10 @@
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="227dp"
+        android:layout_marginTop="179dp"
         android:text="*房屋格局:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
 
     <TextView
@@ -175,11 +163,10 @@
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="26dp"
         android:text="*房屋地址:"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="25dp" />
 
     <Spinner
         android:id="@+id/spinner3"
@@ -211,24 +198,24 @@
         android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editText8"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignEnd="@+id/spinner3"
-        android:layout_alignTop="@+id/editTextNong"
+        android:layout_alignTop="@+id/editText2"
         android:ems="10"
         android:inputType="textPersonName"
         android:layout_alignRight="@+id/spinner3" />
 
 
     <EditText
-        android:id="@+id/editTextFloor"
+        android:id="@+id/editText14"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/editTextNumber"
+        android:layout_alignTop="@+id/editText8"
         android:layout_marginEnd="34dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -236,68 +223,69 @@
         android:layout_marginRight="34dp" />
 
     <EditText
-        android:id="@+id/editTextNong"
+        android:id="@+id/editText6"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/spinner3"
-        android:layout_toStartOf="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_marginStart="95dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_toLeftOf="@+id/textView" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="95dp" />
 
     <EditText
-        android:id="@+id/editTextValley"
+        android:id="@+id/editText2"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinner3"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true" />
 
     <EditText
-        android:id="@+id/editTextBalcony"
+        android:id="@+id/editText20"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="51dp" />
 
     <EditText
-        android:id="@+id/editTextToilet"
+        android:id="@+id/editText19"
         android:layout_width="53dp"
         android:layout_height="wrap_content"
 
         android:layout_alignEnd="@+id/spinner3"
-        android:layout_alignRight="@+id/spinner3"
         android:layout_centerVertical="true"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/spinner3" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextNumber"
-
-        android:layout_alignEnd="@+id/checkBox5"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_toEndOf="@+id/editText6"
         android:text="弄"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_alignRight="@+id/checkBox5" />
+        android:layout_toRightOf="@+id/editText6" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextNumber"
+        android:layout_alignBottom="@+id/editText8"
         android:layout_toEndOf="@+id/spinner3"
         android:layout_toRightOf="@+id/spinner3"
         android:text="號"
@@ -308,86 +296,94 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextNumber"
+        android:layout_alignBottom="@+id/editText8"
         android:layout_marginLeft="-34dp"
         android:layout_marginStart="-34dp"
-        android:layout_toEndOf="@+id/editTextFloor"
-        android:layout_toRightOf="@+id/editTextFloor"
+        android:layout_toEndOf="@+id/editText14"
+        android:layout_toRightOf="@+id/editText14"
         android:text="樓"
         android:textColor="#000000"
         android:textSize="25dp" />
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName19"
+        android:layout_toEndOf="@+id/editText21"
+        android:text="坪"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/editText21" />
+
+    <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_alignBottom="@+id/editTextRoom"
-        android:layout_toEndOf="@+id/editTextRoom"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/checkBox7"
         android:text="房"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_toRightOf="@+id/editTextRoom" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextRoom"
+        android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/spinner3"
         android:text="衛"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_toRightOf="@+id/spinner3" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextRoom"
+        android:layout_alignBottom="@+id/editText15"
         android:layout_marginStart="-53dp"
-        android:layout_toEndOf="@+id/editTextFloor"
+        android:layout_toEndOf="@+id/editText14"
         android:text="陽台"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_toRightOf="@+id/editTextFloor"
+        android:layout_toRightOf="@+id/editText14"
         android:layout_marginLeft="-53dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextRoom"
-        android:layout_alignEnd="@+id/checkBox2"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/editText15"
         android:text="廳"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignRight="@+id/checkBox2" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editTextNumber"
-        android:layout_alignEnd="@+id/checkBox2"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_toEndOf="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
         android:text="巷"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:layout_alignRight="@+id/checkBox2" />
+        android:textSize="25dp" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/checkBox2"
-        android:layout_toEndOf="@+id/checkBox6"
+        android:layout_below="@+id/firstName20"
+        android:layout_marginTop="-145dp"
+        android:layout_toEndOf="@+id/textView2"
         android:text="電視"
         android:textSize="18dp"
-        android:layout_toRightOf="@+id/checkBox6" />
+        android:layout_toRightOf="@+id/textView2" />
 
 
     <Button
-        android:id="@+id/NextStep2"
+        android:id="@+id/NextStep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

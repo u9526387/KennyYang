@@ -4,72 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.rent_collection">
+    tools:context="com.example.u9526.myapplication.Fragment.Rent_collectionFragment">
 
 
-    <TextView
-        android:id="@+id/ChooseIdentity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCDD2"
-        android:gravity="center"
-        android:text="我的收藏"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
-
-    <Button
-        android:id="@+id/homepage"
-        android:layout_width="88dp"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:backgroundTint="#03DAC6"
-        android:text="首頁"
-        android:textSize="16dp"
-        android:onClick="jumpTorent_homepage"/>
-
-    <Button
-        android:id="@+id/collection"
-        android:layout_width="88dp"
-        android:layout_height="96dp"
-        android:layout_alignBottom="@+id/homepage"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/homepage"
-        android:layout_toRightOf="@+id/homepage"
-        android:backgroundTint="#03DAC6"
-        android:text="我的收藏"
-        android:textSize="26dp" />
-
-    <Button
-        android:id="@+id/message"
-        android:layout_width="88dp"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_alignBottom="@+id/homepage"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/collection"
-        android:layout_toRightOf="@+id/collection"
-        android:backgroundTint="#03DAC6"
-        android:text="互動訊息"
-        android:textSize="16dp"
-        android:onClick="jumpTorent_message"/>
-
-    <Button
-        android:id="@+id/personalData"
-        android:layout_width="88dp"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_alignBottom="@+id/message"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:backgroundTint="#03DAC6"
-        android:text="個人資料"
-        android:textSize="16dp"
-        android:onClick="jumpTorent_personalData"/>
 
 </RelativeLayout>

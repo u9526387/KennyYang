@@ -15,7 +15,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.u9526.myapplication.R;
-import com.example.u9526.myapplication.rent_homepage__search;
+import com.example.u9526.myapplication.Rent.rent_homepage__search;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,6 +58,7 @@ public class main_recommend extends AppCompatActivity implements HouseAdapter.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_recommend);
         //getting the recyclerview from xml
+        getSupportActionBar().hide();
         recyclerView = findViewById(R.id.recylcerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

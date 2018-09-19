@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.u9526.myapplication.rent_homepage__search___region">
+    tools:context="com.example.u9526.myapplication.Rent.rent_homepage__search___region">
+
+
+
 
 
     <Spinner
