@@ -213,10 +213,8 @@
         android:textSize="28dp" />
 
 
-
-
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/tvBrithday"
@@ -235,6 +233,54 @@
         android:gravity="center"
         android:text="下一步"
         android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/cbChinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_toEndOf="@+id/tvdepartent"
+        android:text="中文" />
+
+    <CheckBox
+        android:id="@+id/cbEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_centerHorizontal="true"
+        android:text="英文" />
+
+    <CheckBox
+        android:id="@+id/cbTaiwnese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvAddress"
+        android:layout_alignEnd="@+id/Finish"
+        android:text="台語" />
+
+    <CheckBox
+        android:id="@+id/cbBike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_toEndOf="@+id/tvTransportation"
+        android:text="自行車" />
+
+    <CheckBox
+        android:id="@+id/cbScooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_toEndOf="@+id/cbBike"
+        android:text="機車" />
+
+    <CheckBox
+        android:id="@+id/cbCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTransportation"
+        android:layout_alignEnd="@+id/School"
+        android:text="汽車" />
 
 
 </RelativeLayout>

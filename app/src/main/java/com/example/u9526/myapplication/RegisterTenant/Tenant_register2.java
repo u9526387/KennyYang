@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -37,9 +39,11 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
     private ProgressDialog progressDialog;
     private ActionBar toolbar;
 
-    private Spinner spinner1, spinnerYear, spinnerMonth, spinnerDay, spinnerReligion;
+    private Spinner spGender, spinnerYear, spinnerMonth, spinnerDay, spinnerReligion;
     private int major_value;
     private String gender_value, spinnerYear_value, spinnerMonth_value, spinnerDay_value, spinnerReligion_value;
+    private CheckBox cbChinese, cbEnglish, cbTaiwanese, cbBike, cbScooter, cbCar;
+    private String cbChinese_value, cbEnglish_value, cbTaiwanese_value, cbBike_value, cbScooter_value, cbCar_value;
 
 
     @Override
@@ -54,18 +58,101 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
         editTextSchool = (EditText) findViewById(R.id.School);
         editTextDepartent = (EditText) findViewById(R.id.Departent);
         //宣告
-        spinner1 = (Spinner) findViewById(R.id.spinner1);
-        Spinner spinnerYear = findViewById(R.id.spinnerYear);
-        Spinner spinnerMonth = findViewById(R.id.spinnerMonth);
-        Spinner spinnerDay = findViewById(R.id.spinnerDay);
-        Spinner spinnerReligion = findViewById(R.id.spinnerReligion);
+        spGender = (Spinner) findViewById(R.id.spGender);
+        spinnerYear = (Spinner) findViewById(R.id.spinnerYear);
+        spinnerMonth = (Spinner) findViewById(R.id.spinnerMonth);
+        spinnerDay = (Spinner) findViewById(R.id.spinnerDay);
+        spinnerReligion = (Spinner) findViewById(R.id.spinnerReligion);
+
+
+        cbChinese = (CheckBox) findViewById(R.id.cbChinese);
+        cbEnglish = (CheckBox) findViewById(R.id.cbEnglish);
+        cbTaiwanese = (CheckBox) findViewById(R.id.cbTaiwnese);
+        cbBike = (CheckBox) findViewById(R.id.cbBike);
+        cbScooter = (CheckBox) findViewById(R.id.cbScooter);
+        cbCar = (CheckBox) findViewById(R.id.cbCar);
+        cbChinese_value = "0";
+        cbEnglish_value = "0";
+        cbTaiwanese_value = "0";
+        cbBike_value = "0";
+        cbScooter_value = "0";
+        cbCar_value = "0";
+
+        //觸發Checkbox被選取的事件
+        cbChinese.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbChinese_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+        //觸發Checkbox被選取的事件
+        cbEnglish.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbEnglish_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+
+
+        cbTaiwanese.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbTaiwanese_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+
+        cbBike.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbBike_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+
+        cbScooter.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbScooter_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+
+        cbCar.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                cbCar_value = "1";//inChess_value=得到的Text值
+                //inChess.setChecked(false);//如果沒有被選取就False，由於inChess_value沒有改變，所以等下會傳0進資料庫
+
+
+            }
+        });
+
 
         //宣告
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spn_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(adapter);
-        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spGender.setAdapter(adapter);
+        spGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
@@ -85,25 +172,82 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
         ArrayAdapter<CharSequence> adapterYear = ArrayAdapter.createFromResource(this, R.array.spn_year, android.R.layout.simple_spinner_item);
         adapterYear.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerYear.setAdapter(adapterYear);
-        spinnerYear.setOnItemSelectedListener(this);
+        spinnerYear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                spinnerYear_value = parent.getSelectedItem().toString();
+                Toast.makeText(getBaseContext(), parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
 
         ArrayAdapter<CharSequence> adapterMonth = ArrayAdapter.createFromResource(this, R.array.spn_month, android.R.layout.simple_spinner_item);
         adapterMonth.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMonth.setAdapter(adapterMonth);
-        spinnerMonth.setOnItemSelectedListener(this);
+        spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                spinnerMonth_value = parent.getSelectedItem().toString();
+                Toast.makeText(getBaseContext(), parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
         ArrayAdapter<CharSequence> adapterDay = ArrayAdapter.createFromResource(this, R.array.spn_day, android.R.layout.simple_spinner_item);
         adapterDay.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerDay.setAdapter(adapterDay);
-        spinnerDay.setOnItemSelectedListener(this);
+        spinnerDay.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                spinnerDay_value = parent.getSelectedItem().toString();
+                Toast.makeText(getBaseContext(), parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
         ArrayAdapter<CharSequence> adapterReligion = ArrayAdapter.createFromResource(this, R.array.spn_religion, android.R.layout.simple_spinner_item);
         adapterReligion.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerReligion.setAdapter(adapterReligion);
-        spinnerReligion.setOnItemSelectedListener(this);
+        spinnerReligion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                spinnerReligion_value = parent.getSelectedItem().toString();
+                Toast.makeText(getBaseContext(), parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
         Nextstep = (Button) findViewById(R.id.Finish);
@@ -125,6 +269,10 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
         final String School = editTextSchool.getText().toString().trim();
         final String Departent = editTextDepartent.getText().toString().trim();
         final String gender = gender_value.toString().trim();
+        final String BrithdayYear = spinnerYear_value.toString().trim();
+        final String BrithdayMonth = spinnerMonth_value.toString().trim();
+        final String BrithdayDay = spinnerDay_value.toString().trim();
+        final String Religion = spinnerReligion_value.toString().trim();
 
         progressDialog.setMessage("Register user ......");
         progressDialog.show();
@@ -157,11 +305,25 @@ public class Tenant_register2 extends AppCompatActivity implements View.OnClickL
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("Address", Address);
-                params.put("IDnumber", IDnumber);
-                params.put("School", School);
-                params.put("Departent", Departent);
-                params.put("gender", gender);
+                params.put("T_Address", Address);
+                params.put("T_IDnumber", IDnumber);
+                params.put("T_School", School);
+                params.put("T_Department", Departent);
+                params.put("T_Gender", gender);
+                params.put("T_BrithdayYear", BrithdayYear);
+                params.put("T_BrithdayMonth", BrithdayMonth);
+                params.put("T_BrithdayDay", BrithdayDay);
+                params.put("T_Religion", Religion);
+                params.put("T_LanguageC", cbChinese_value);
+                params.put("T_LanguageE", cbEnglish_value);
+                params.put("T_LanguageT", cbTaiwanese_value);
+                params.put("T_TransportationBike", cbBike_value);
+                params.put("T_TransportationScooter", cbScooter_value);
+                params.put("T_TransportationCar", cbCar_value);
+
+
+
+
                 return params;
             }
         };
