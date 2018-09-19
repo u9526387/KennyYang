@@ -16,7 +16,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.u9526.myapplication.R;
 import com.example.u9526.myapplication.rent_homepage__search;
-import com.example.u9526.myapplication.rent_homepgae;
 
 import org.json.JSONArray;
 import org.json.JSONException;
