@@ -22,7 +22,7 @@ import static com.android.volley.VolleyLog.TAG;
 
 public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewHolder> {
     private Context mCtx;
-    private List<house> houseList;
+    private static List<house> houseList;
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {
@@ -38,7 +38,6 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewH
         this.houseList = productList;
     }
 
-
     @Override
     public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
@@ -50,19 +49,19 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewH
     public void onBindViewHolder(ProductViewHolder holder, int position) {
         house product = houseList.get(position);
 
-        String imageUrl = product.getImage();
+        //String imageUrl = product.getImage();
         String Title = product.getTitle();
-        String Address = product.getAddress();
-        int Price = product.getPrice();
+        String City = product.getCity();
+        String Region = product.getHousetype();
         //loading the image
         Glide.with(mCtx)
                 .load(product.getImage())
                 .into(holder.imageView);
 
         holder.textViewTitle.setText(product.getTitle());
-        holder.textViewAddress.setText(product.getAddress());
-        holder.textViewPrice.setText(String.valueOf(product.getPrice()));
-
+        holder.textViewCity.setText(product.getCity());
+        holder.textViewRegion.setText(product.getRegion());
+        holder.textViewRentprice.setText(product.getRent());
 
     }
 
@@ -71,16 +70,20 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ProductViewH
         return houseList.size();
     }
 
+    public static void filterList(ArrayList<house> filteredList) {
+        houseList = filteredList;
+    }
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView textViewTitle, textViewAddress, textViewPrice;
+        public TextView textViewTitle, textViewCity, textViewRegion, textViewRentprice;
         public ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
-            textViewAddress = itemView.findViewById(R.id.textViewAddress);
-            textViewPrice = itemView.findViewById(R.id.textViewPrice);
+            textViewCity = itemView.findViewById(R.id.textViewCity);
+            textViewRegion = itemView.findViewById(R.id.textViewRegion);
+            textViewRentprice = itemView.findViewById(R.id.textViewRentprice);
             imageView = itemView.findViewById(R.id.imageView);
 
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -184,7 +184,7 @@
         android:text="設施" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -194,23 +194,23 @@
         android:text="洗衣機" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkRefrig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/checkBox"
-        android:layout_toEndOf="@+id/checkBox"
-        android:layout_toRightOf="@+id/checkBox"
+        android:layout_alignTop="@+id/checkTV"
+        android:layout_toEndOf="@+id/checkTV"
+        android:layout_toRightOf="@+id/checkTV"
         android:textSize="18dp"
         android:text="冰箱" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkAir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox2"
-        android:layout_alignBottom="@+id/checkBox2"
-        android:layout_toEndOf="@+id/checkBox2"
-        android:layout_toRightOf="@+id/checkBox2"
+        android:layout_alignBaseline="@+id/checkRefrig"
+        android:layout_alignBottom="@+id/checkRefrig"
+        android:layout_toEndOf="@+id/checkRefrig"
+        android:layout_toRightOf="@+id/checkRefrig"
         android:text="電視"
         android:textSize="18dp" />
 
@@ -218,52 +218,52 @@
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox3"
-        android:layout_alignBottom="@+id/checkBox3"
-        android:layout_toEndOf="@+id/checkBox3"
-        android:layout_toRightOf="@+id/checkBox3"
+        android:layout_alignBaseline="@+id/checkAir"
+        android:layout_alignBottom="@+id/checkAir"
+        android:layout_toEndOf="@+id/checkAir"
+        android:layout_toRightOf="@+id/checkAir"
         android:text="冷氣"
         android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkNet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkBox"
+        android:layout_below="@+id/checkTV"
         android:textSize="18dp"
         android:text="熱水器" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkWash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox2"
-        android:layout_toEndOf="@+id/checkBox"
-        android:layout_toRightOf="@+id/checkBox"
+        android:layout_below="@+id/checkRefrig"
+        android:layout_toEndOf="@+id/checkTV"
+        android:layout_toRightOf="@+id/checkTV"
         android:text="網路"
         android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/checkFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox6"
-        android:layout_alignBottom="@+id/checkBox6"
-        android:layout_toEndOf="@+id/checkBox2"
-        android:layout_toRightOf="@+id/checkBox2"
+        android:layout_alignBaseline="@+id/checkWash"
+        android:layout_alignBottom="@+id/checkWash"
+        android:layout_toEndOf="@+id/checkRefrig"
+        android:layout_toRightOf="@+id/checkRefrig"
         android:text="第四台"
         android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/checkGas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox7"
-        android:layout_alignBottom="@+id/checkBox7"
-        android:layout_toEndOf="@+id/checkBox7"
-        android:layout_toRightOf="@+id/checkBox7"
+        android:layout_alignBaseline="@+id/checkFour"
+        android:layout_alignBottom="@+id/checkFour"
+        android:layout_toEndOf="@+id/checkFour"
+        android:layout_toRightOf="@+id/checkFour"
         android:text="天然瓦斯"
         android:textSize="18dp" />
 

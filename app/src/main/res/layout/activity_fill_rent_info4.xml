@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".HouseInfo.FillRentInfo4">
 
+    <TextView
+        android:id="@+id/ChooseIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="房屋資料"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 
 
     <TextView
@@ -20,6 +32,18 @@
         android:textSize="25dp"
         android:layout_alignParentLeft="true" />
 
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="80dp"
+
+        android:entries="@array/gender">
+
+
+    </Spinner>
+
 
     <TextView
         android:id="@+id/firstName29"
@@ -33,6 +57,31 @@
         android:textSize="25dp"
         android:layout_alignParentLeft="true" />
 
+    <RadioGroup
+        android:id="@+id/RadioGroupFire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="128dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_fire_yes"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="是" />
+
+        <RadioButton
+            android:id="@+id/rd_fire_no"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="否" />
+
+    </RadioGroup>
+
     <TextView
         android:id="@+id/firstName30"
         android:layout_width="wrap_content"
@@ -44,157 +93,95 @@
         android:textColor="#000000"
         android:textSize="25dp"
         android:layout_alignParentLeft="true" />
+    <RadioGroup
+        android:id="@+id/RadioGroupPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="179dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_pet_yes"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="是" />
+
+        <RadioButton
+            android:id="@+id/rd_pet_no"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="否" />
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/firstName31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox27"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="230dp"
         android:text="生活機能(接近):"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:layout_alignParentLeft="true" />
+         />
 
     <CheckBox
-        android:id="@+id/checkBox14"
+        android:id="@+id/ch_Dstore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/firstName26"
-        android:layout_toEndOf="@+id/firstName26"
-        android:text="男生"
-        android:textSize="18dp"
-        android:layout_toRightOf="@+id/firstName26" />
-
-    <CheckBox
-        android:id="@+id/checkBox18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/firstName26"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="127dp"
-        android:text="女生"
-        android:textSize="18dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="127dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/firstName26"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="43dp"
-        android:text="不限"
-        android:textSize="18dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="43dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/firstName29"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="64dp"
-        android:text="可"
-        android:textSize="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="64dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/firstName30"
-        android:layout_toEndOf="@+id/checkBox14"
-        android:text="不可"
-        android:textSize="18dp"
-        android:layout_toRightOf="@+id/checkBox14" />
-
-    <CheckBox
-        android:id="@+id/checkBox26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/firstName29"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="135dp"
-        android:text="不可"
-        android:textSize="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="135dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/firstName30"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="98dp"
-        android:text="可"
-        android:textSize="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="98dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/firstName26"
+       android:layout_marginTop="260dp"
         android:text="百貨公司"
         android:textSize="18dp"
         android:layout_toRightOf="@+id/firstName26" />
 
     <CheckBox
-        android:id="@+id/checkBox27"
+        android:id="@+id/ch_store"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="260dp"
         android:text="便利商店"
         android:textSize="18dp"
-        android:layout_alignParentLeft="true" />
+        />
 
     <CheckBox
-        android:id="@+id/checkBox29"
+        android:id="@+id/ch_park"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/checkBox28"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@+id/ch_Dstore"
         android:text="公園綠地"
-        android:textSize="18dp"
-        android:layout_toRightOf="@+id/checkBox28" />
+        android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox30"
+        android:id="@+id/ch_school"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkBox27"
+        android:layout_marginTop="290dp"
         android:text="學校"
-        android:textSize="18dp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox31"
+        android:id="@+id/ch_hospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox27"
-        android:layout_toEndOf="@+id/checkBox28"
+        android:layout_below="@+id/ch_store"
+        android:layout_toEndOf="@+id/ch_Dstore"
+        android:layout_toRightOf="@+id/ch_Dstore"
         android:text="醫療機構"
-        android:textSize="18dp"
-        android:layout_toRightOf="@+id/checkBox28" />
+        android:textSize="18dp" />
 
     <CheckBox
-        android:id="@+id/checkBox32"
+        android:id="@+id/ch_night"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox27"
+        android:layout_below="@+id/ch_store"
         android:layout_toEndOf="@+id/firstName26"
+        android:layout_toRightOf="@+id/firstName26"
         android:text="夜市"
-        android:textSize="18dp"
-        android:layout_toRightOf="@+id/firstName26" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/firstName32"
@@ -202,76 +189,49 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="150dp"
         android:text="附近交通:"
         android:textColor="#000000"
         android:textSize="25dp"
         android:layout_alignParentLeft="true" />
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="109dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/checkBox18"
-        android:layout_below="@+id/firstName32"
-        android:layout_marginTop="-190dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignLeft="@+id/checkBox18" />
-
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="109dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText7"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignParentLeft="true" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="109dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/firstName32"
-        android:layout_marginTop="-190dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText7"
-        android:layout_toEndOf="@+id/editText7"
+        android:layout_marginTop="370dp"
         android:text="捷運站"
         android:textColor="#000000"
-        android:textSize="20dp"
-        android:layout_toRightOf="@+id/editText7" />
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextMRT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="358dp"
+        android:hint="Ex:台電大樓站"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText12"
-        android:layout_toEndOf="@+id/firstName26"
+        android:layout_marginLeft="190dp"
+        android:layout_alignTop="@+id/textView2"
         android:text="火車站"
         android:textColor="#000000"
-        android:textSize="20dp"
-        android:layout_toRightOf="@+id/firstName26" />
+        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/textView12"
+    <EditText
+        android:id="@+id/editTextTrain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText7"
-        android:layout_toEndOf="@+id/firstName26"
-        android:text="公車站"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:layout_toRightOf="@+id/firstName26" />
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="358dp"
+        android:hint="Ex:樹林火車站"
+        android:textSize="18dp" />
+
 
     <Button
         android:id="@+id/NextStep4"

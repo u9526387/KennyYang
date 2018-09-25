@@ -14,86 +14,37 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="169dp">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新北市"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新莊區"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+</LinearLayout>
+
 
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="169dp"
-                android:gravity="center_vertical"
-                android:text="新北市新莊區中正路"
+                android:layout_marginTop="213dp"
+                android:text="師大路92巷7號5樓"
                 android:textSize="30dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="210dp">
-                <TextView
-                    android:id="@+id/valley"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="12"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/valley2"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="巷"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/nong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="12"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/nong2"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="弄"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="12"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/number2"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="號"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/floor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="12"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/floor2"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="樓"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
-            </LinearLayout>
             <TextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
@@ -156,7 +107,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/description"
+                    android:id="@+id/textViewRoomtype"
                     android:layout_width="190dp"
                     android:layout_height="35dp"
                     android:gravity="center_horizontal"
@@ -182,7 +133,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/plain"
+                    android:id="@+id/ping"
                     android:layout_width="189dp"
                     android:layout_height="31dp"
                     android:text="10"
@@ -255,7 +206,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/cook"
+                    android:id="@+id/fire"
                     android:layout_width="190dp"
                     android:layout_height="31dp"
                     android:text="可"

@@ -1,6 +1,7 @@
 package com.example.u9526.myapplication.login_register;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -20,7 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class NormalLogin extends AppCompatActivity {
-     private ActionBar toolbar;
+    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,34 +42,36 @@ public class NormalLogin extends AppCompatActivity {
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                                                    try {
-                                JSONObject jsonResponse = new JSONObject(response);
-                                boolean success = jsonResponse.getBoolean("success");
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
 
-                                if(success){
-                                    Intent intent = new Intent(NormalLogin.this, bottom_navigation.class);
-                                    NormalLogin.this.startActivity(intent);
+                            if (success) {
+                                Intent intent = new Intent(NormalLogin.this, bottom_navigation.class);
+                                NormalLogin.this.startActivity(intent);
 
-                                }else{
-                                    AlertDialog.Builder builder  = new AlertDialog.Builder(NormalLogin.this);
-                                    builder.setMessage("Login Fail")
-                                            .setNegativeButton("Retry" ,null)
-                                            .create()
-                                            .show();
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                                    }
+
+
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(NormalLogin.this);
+                                builder.setMessage("Login Fail")
+                                        .setNegativeButton("Retry", null)
+                                        .create()
+                                        .show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
                 };
-                LoginRequest loginRequest = new LoginRequest(username ,password , responseListener);
+                LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(NormalLogin.this);
                 queue.add(loginRequest);
             }
         });
     }
 
-    }
+}
 
 
 

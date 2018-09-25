@@ -22,7 +22,7 @@
         android:id="@+id/firstName12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/imageButton11"
+
         android:layout_below="@+id/imageButton11"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="55dp"

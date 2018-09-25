@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -33,20 +36,22 @@
         <activity android:name=".login_register.NormalLogin" />
         <activity android:name=".RegisterTenant.Tenant_register2" />
         <activity android:name=".RegisterTenant.TenantRegister" />
+        <activity android:name=".RegisterTenant.tenant_register3" />
         <activity android:name=".RegisterLandlord.LandlordRegister" />
         <activity android:name=".login_register.NormalRegister" />
         <activity android:name=".homepage" />
         <activity android:name=".RegisterLandlord.Landlord_register2" />
-        <activity android:name=".Rent.rent_personalData" />
+        <activity android:name=".Fragment.Rent_personalDataFragment" />
         <activity android:name=".HouseInfo.FillRentInfo1" />
         <activity android:name=".HouseInfo.FillRentInfo2" />
         <activity android:name=".HouseInfo.FillRentInfo3" />
         <activity android:name=".HouseInfo.FillRentInfo4" />
+        <activity android:name=".HouseInfo.FillRentInfo5" />
         <activity android:name=".Rent.rent_homepage__search___attribute" />
         <activity android:name=".Rent.rent_homepage__search" />
         <activity android:name=".Rent.rent_homepage__search___landmark" />
         <activity android:name=".Rent.rent_homepage__search___region" />
-        <activity android:name=".RegisterTenant.tenant_register3" />
+
         <activity android:name=".RegisterLandlord.landlord_register3" />
         <activity android:name=".Profile_class1_edit" />
         <activity android:name=".recommend.main_recommend"/>

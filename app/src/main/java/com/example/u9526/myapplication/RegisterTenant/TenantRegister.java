@@ -20,6 +20,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.u9526.myapplication.Constants;
 import com.example.u9526.myapplication.R;
+import com.example.u9526.myapplication.TenantRegister2;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +30,8 @@ import java.util.Map;
 
 public class TenantRegister extends AppCompatActivity implements View.OnClickListener {
 
+
+    private static final String URL_TENANT_REGISTER ="http://140.136.155.135/testphp/Register2.php";
     private SharedPreferences user_data;
     private int pair_lord_status = -1, pair_angel_status = -1, userid;//傳值用
     private String token;//半段使用者裝置重複用
@@ -79,7 +82,7 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
         progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Constants.URL_TENANT_REGISTER,
+                URL_TENANT_REGISTER,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -107,9 +110,9 @@ public class TenantRegister extends AppCompatActivity implements View.OnClickLis
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("username", username);
-                params.put("phoneNumber", phoneNumber);
-                params.put("password", password);
+                params.put("U_Name",username );
+                params.put("U_Username", phoneNumber);
+                params.put("U_Password", password);
                 return params;
             }
         };

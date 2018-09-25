@@ -21,38 +21,43 @@
             android:id="@+id/textViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="套房"
+            android:layout_marginLeft="130dp"
+            android:text="超級大豪宅"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/textViewAddress"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textViewTitle"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="新北市"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新北市"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold"/>
 
+            <TextView
+                android:id="@+id/textViewRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新莊區"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewPrice"
+            android:id="@+id/textViewRentprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textViewAddress"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_alignParentBottom="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentRight="false"
-            android:layout_alignParentTop="false"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="130dp"
             android:text="NTD56990"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold" />

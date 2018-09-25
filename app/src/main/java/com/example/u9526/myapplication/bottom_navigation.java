@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.u9526.myapplication.Fragment.Rent_collectionFragment;
 import com.example.u9526.myapplication.Rent.Rent_homepageFragment;
@@ -25,6 +26,7 @@ public class bottom_navigation extends AppCompatActivity {
     private View item;//每一個fragment 都需要宣告一個view來 顯示layout內容
     private SharedPreferences user_data;//SharedPreferences所存入的資料檔
     private int fragment_status;
+    private TextView U_Username;
 
 
     @Override
@@ -36,6 +38,7 @@ public class bottom_navigation extends AppCompatActivity {
         //--------------------------------------------------------------------------------------------------下方按鈕bottomNavigationView
         toolbar.setTitle(R.string.title_personaldata);//第一頁 title 設定為首頁
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        U_Username=findViewById(R.id.profile_user_name);
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -80,7 +83,12 @@ public class bottom_navigation extends AppCompatActivity {
 
         } else {
             bottomNavigationView.setSelectedItemId(R.id.navigation_home);
+
         }
+
+
+
     }
+
 
 }
